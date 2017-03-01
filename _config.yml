@@ -1,0 +1,74 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: 乐水榭
+email: vonfry314@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  论极语易个人博客——乐水榭，一个太极／易经爱好者，一个程序员，一个vim+emacs粉，一个lisp Hacker。
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://vonfry.name" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: Vonfry314
+github_username:  Vonfry
+excerpt_separator: "<!-- more -->"
+
+# Build settings
+destination:  ./_site
+markdown: kramdown
+theme: minima
+sass:
+  style: compressed
+keep_files:
+  - .git
+  - .gitignore
+  - theme
+include:
+  - .htaccess
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - readme.org
+
+# Conversion
+highlighter: rouge
+
+# Outputting
+permalink: /:title
+paginate: 8
+paginate_path: /page:num
+timezone: Asia/Shanghai
+encoding: utf-8
+
+quiet: false
+verbose: false
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      author: "Vonfry"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Vonfry"
+      toc: true
+liquid:
+  error_mode: warn
+
+# Plugins
+safe: No

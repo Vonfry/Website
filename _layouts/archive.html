@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<header class="archive">
+    <pre class="ascii-art">
+    ___              __    _
+   /   |  __________/ /_  (_)   _____
+  / /| | / ___/ ___/ __ \/ / | / / _ \
+ / ___ |/ /  / /__/ / / / /| |/ /  __/
+/_/  |_/_/   \___/_/ /_/_/ |___/\___/
+
+    </pre>
+</header>
+<main class="ui grid container archive">
+    <div class="one column row cmd">
+        <div class="column">
+            <span class="hash">#</span>
+            <span class="vonfry">vonfry</span>
+            <span class="at">@</span>
+            <select class="type">
+                <option value="cats" selected>categories</option>
+                <option value="tags">tags</option>
+            </select>
+            <span class="in">in</span>
+            <select class="archive cats" style="display: inline-block;">
+                <option value="nil" selected>nil</option>
+            {% for cat in site.categories %}
+                <option value="{{ cat[0] }}">{{ cat[0]}}</option>
+            {% endfor %}
+            </select>
+            <select class="archive tags" style="display: none;">
+                <option value="nil" selected>nil</option>
+            {% for tag in site.tags %}
+                <option value="{{ tag[0] }}">{{ tag[0] }}</option>
+            {% endfor %}
+            </select>
+        </div>
+    </div>
+    <div class="one column row list">
+        <a class="column tpl" href title>
+            <code class="date"></code>
+            <code class="title"></code>
+        </a>
+    </div>
+</main>
+<script src="{{ site.url }}/assets/js/archive.js" type="text/javascript" charset="utf-8"></script>

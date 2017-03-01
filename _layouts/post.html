@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{% assign mode = page.mode|default:"org-mode" %}
+{% assign tpl = site.data.mode.[mode] %}
+<script type="text/javascript" charset="utf-8">
+    var toc = {{ page.toc|default:false|jsonify }};
+</script>
+<main class="ui grid container post">
+    <div class="one column row frontmatter">
+        <div class="column title">
+            <span class="tpl">{{ tpl.title }}</span>
+            <span class="cnt">{{ page.title }}</span>
+        </div>
+        <div class="column date">
+            <span class="tpl">{{ tpl.date }}</span>
+            <span class="cnt">{{ page.date }}</span>
+        </div>
+        <div class="column categories">
+            <span class="tpl">{{ tpl.categories }}</span>
+            {% for cat in page.categories %}
+                <a class="cnt cat-item" href="{{ site.url }}/archive/#!cats/{{ cat }}">{{ cat }}</a>
+            {% endfor %}
+        </div>
+        <div class="column tags">
+            <span class="tpl">{{ tpl.tags }}</span>
+        {% for tags in page.tags %}
+            <a class="cnt tag-item" href="{{ site.url }}/archive/#!tags/{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+        </div>
+    </div>
+    <div class="one column row">
+        <article class="column">{{ content }}</article>
+        <div class="column article copyright"><a href="{{ site.url }}">转载请注明出处：乐水榭。</a></div>
+        <div class="column article copyright"><a href="{{ site.url }}{{ page.url }}">本文链接：{{ site.url }}{{ page.url }}</a></div>
+    </div>
+</main>
+<script src="{{ site.url }}/assets/js/post.js" type="text/javascript" charset="utf-8"></script>
