@@ -72,3 +72,4 @@ liquid:
 
 # Plugins
 safe: No
+gems: [jekyll-paginate]
