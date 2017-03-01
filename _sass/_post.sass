@@ -1,0 +1,97 @@
+@import toc
+
+main.post
+  padding-top: 44px !important
+  .article.copyright
+    &, a
+      font-size: 1em
+      color: $base01
+  .frontmatter
+    font-size: 1.2em
+    & > div.column
+      padding-bottom: 0.7em
+      white-space: nowrap
+      overflow-x: hidden
+      text-overflow: ellipsis
+    .tpl
+      font-family: "code-font"
+      margin-right: 7px
+      color: $yellow !important
+    .cnt
+      word-wrap:  break-word
+      word-break: break-all
+      color: $blue
+      .title
+        font-size: 2em
+        color: $yellow
+    .cat-item, .tag-item
+      padding-left:  2px
+      padding-right: 2px
+  article
+    padding-bottom: 0.7em
+    font-family: "en-font", "cn-font"
+    p > code
+      @extend .highlight
+      padding: 0 2px
+      margin: 0 2px
+    font-size: 1em
+    h1
+      color: $red
+    h2
+      color: $green
+    h3
+      color: $blue
+    h4
+      color: $yellow
+    h5
+      color: $cyan
+    h6
+      color: $violet
+    a
+      color: $violet
+    ul, ol
+      padding-left: 2em
+    blockquote
+      font-style: italic
+      &, *
+        color: $base01
+    img
+      background: $base02
+      background-clip: padding-box
+      padding: 1em
+      border: solid 2px $cyan
+      border-radius: 7px
+      max-width: 60%
+    table
+      border: none
+      text-align: center
+      width: 100%
+      max-width: 100%
+      background-color: $base02
+      $table-border-color: $cyan
+      > thead,
+      > tbody,
+      > tfoot
+        > tr
+          > th,
+          > td
+            padding: 8px
+            line-height: 8px
+            vertical-align: top
+            border-top: 1px solid $table-border-color
+      > thead > tr > th
+        vertical-align: bottom
+        border-bottom: 2px solid $cyan
+      > caption + thead,
+      > colgroup + thead,
+      > thead:first-child
+        > tr:first-child
+          > th,
+          > td
+            border-top: 0
+      > tbody + tbody
+        border-top: 2px solid $table-border-color
+    /* pre see .highlight */
+
+main.page
+  @extend main.post

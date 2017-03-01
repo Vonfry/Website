@@ -1,0 +1,13 @@
+<div class="airline">
+    <span class="left-code">
+        <code class="type">{% comment %}page or post or others{% endcomment %}{{ page.type|default:"post" }}</code>
+        <code class="path">{{ page.path }}</code>
+    </span>
+    <span class="right-code">
+        <code class="mode">{% comment %}org or markdown{% endcomment %}
+            #'(vultr 'nginx (:with 'jekyll)) &lt; {{ page.mode|default:"markdown" }}{% comment %}a custom variables{% endcomment %}
+        </code>
+        <code class="sys-coding">utf-8[unix]</code>
+        <code class="copyright">© {{ site.time|date:"%Y" }} vonfry.name</code>
+    </span>
+</div>

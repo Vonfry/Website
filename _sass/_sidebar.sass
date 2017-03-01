@@ -1,0 +1,52 @@
+$sidebarWidth: 320px
+$sidebarBorderWidthHide: 16px
+$sidebarBorderWidthShow: 3px
+$sidebarOffset: $sidebarWidth - $sidebarBorderWidthHide
+.sidebar
+  background-color: $base03
+  border-right: $sidebarBorderWidthHide solid $base02
+  &:hover
+    border-right-width: $sidebarBorderWidthShow
+  $width: $sidebarWidth
+  position: fixed
+  width: $width
+  height: 100%
+  top: 0
+  left: -$sidebarOffset
+  .placeholder
+    width: 100%
+  .nav a
+    color: $yellow
+    display: block
+    text-align: right
+    font-size: 1.2em
+    padding: 1em 0.7em
+  .logo
+    padding: 1em 0
+    text-align: center
+    background: $base02
+    img
+      // A copy style from semantic-ui images.less
+      width: 240px
+      font-size: 1em
+      $circularRadius: 500rem
+      -webkit-border-radius: $circularRadius
+      -moz-border-radius: $circularRadius
+      border-radius: $circularRadius
+
+=magic-transition
+  transition: 0.5s all ease
+
+=magic-ani($in)
+  +magic-transition
+  @if $in
+    transform: translateX($sidebarOffset)
+  @else
+    transform: translateX(0)
+
+.push-magic
+  // show sidebar
+  +magic-ani(true)
+.pop-magic
+  // hide sidebar
+  +magic-ani(false)

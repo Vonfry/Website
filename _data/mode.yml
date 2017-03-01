@@ -1,0 +1,11 @@
+markdown:
+  title:      "title:"
+  date:       "date:&ensp;"
+  tags:       "tags:&ensp;"
+  categories: "cats:&ensp;"
+
+org-mode:
+  title:      "#+title:"
+  date:       "#+date:&ensp;"
+  tags:       "#+tags:&ensp;"
+  categories: "#+cats:&ensp;"
