@@ -5,7 +5,8 @@ define([
     'dojo/dom-construct',
     'dojo/mouse',
     'dojo/on',
-    'dojo/dom-class'
+    'dojo/dom-class',
+    'dojo/_base/lang'
 ], function(declare, query) {
     return declare(null, {
         query: 'article', // tag for query and iter
@@ -93,7 +94,7 @@ define([
                 header.title = tag.innerText;
                 let toc = self.toc;
                 while (toc || !(self.toc = header)) { // Because of short-circuit evaluation
-                    header.id = toc.id;
+                    header.id = lang.clone(toc.id);
                     if (toc.hx < header.hx) {
                         if (toc.child) {
                             toc = toc.child;
@@ -112,7 +113,7 @@ define([
                     }
                 }
                 ++header.id[header.id.length - 1];
-                tag.id = this.headerIdPrefix + this.headerIdPrefix + header.id.join(this.headerIdPrefix);
+                tag.id = self.headerIdPrefix + self.headerIdPrefix + header.id.join(this.headerIdPrefix);
             });
             return this.toc;
         },
