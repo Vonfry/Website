@@ -84,6 +84,7 @@ define([
         readHeader: function() {
             this.toc = null;
             let self = this;
+            let lang = require('dojo/_base/lang');
             query(this.query)[0].childNodes.forEach(function(tag) {
                 let match = tag.tagName ? tag.tagName.match(/h(\d)/i): false;
                 if (!(match && self.header.indexOf(parseInt(match[1])) != -1)) {
