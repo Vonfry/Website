@@ -2,7 +2,7 @@
 title: owncloud安装问题记录
 date: 2017-03-01 16:54:00 +0800
 tags: owncloud fedora
-categories: Server
+categories: server
 ---
 
 今天又把服务器安装了一个owncloud玩玩，虽然主要数据还是存在dropbox上的就是了。
