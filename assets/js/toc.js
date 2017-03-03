@@ -114,7 +114,7 @@ define([
                     }
                 }
                 ++header.id[header.id.length - 1];
-                tag.id = self.headerIdPrefix + self.headerIdPrefix + header.id.join(this.headerIdPrefix);
+                tag.id = self.headerIdPrefix + self.headerIdSeparator + header.id.join(this.headerIdPrefix);
             });
             return this.toc;
         },
