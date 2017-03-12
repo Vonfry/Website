@@ -25,7 +25,7 @@ mode: markdown
 >
 > 平日使用`Vim`与`Emacs`写代码。具体用哪个？看心情吧。
 >
-> 这里有我的配置文件哦！[vim](https://git.vonfry.name/Vonfry/vimrc) & [emacs](https://git.vonfry.name/Vonfry/emacs-d)
+> 这里有我的配置文件哦！[dotfiles](https://github.com/VonFry/dotfiles)
 
 # Project
   [Github](https://github.com/vonfry)
