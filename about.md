@@ -21,7 +21,7 @@ mode: markdown
 >
 > 虽然更喜欢`Scheme`，不过用还是`Common Lisp`。
 >
-> 之外主要是`Ruby`以及`C++`，偶尔用用`Python`吧。学过相当一些语言，但比较喜欢的还是这几个呢。
+> 之外主要是`GO`、`Ruby`以及`C++`，偶尔用用`Python`吧。学过相当一些语言，但比较喜欢的还是这几个呢。
 >
 > 平日使用`Vim`与`Emacs`写代码。具体用哪个？看心情吧。
 >
@@ -34,5 +34,3 @@ mode: markdown
   [Twitter](https://twitter.com/Vonfry314)
   [Weibo](http://weibo.com/fryown)
   [Email](mailto:vonfry314@gmail.com)
-
-
