@@ -19,13 +19,13 @@ layout: default
         <div class="column categories">
             <span class="tpl">{{ tpl.categories }}</span>
             {% for cat in page.categories %}
-                <a class="cnt cat-item" href="{{ site.url }}/archive/#!cats/{{ cat }}">{{ cat }}</a>
+                <a class="cnt cat-item" href="{{ site.url }}/archive/#!/cats/{{ cat }}">{{ cat }}</a>
             {% endfor %}
         </div>
         <div class="column tags">
             <span class="tpl">{{ tpl.tags }}</span>
         {% for tags in page.tags %}
-            <a class="cnt tag-item" href="{{ site.url }}/archive/#!tags/{{ tag }}">{{ tag }}</a>
+            <a class="cnt tag-item" href="{{ site.url }}/archive/#!/tags/{{ tag }}">{{ tag }}</a>
         {% endfor %}
         </div>
     </div>
