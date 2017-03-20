@@ -25,6 +25,10 @@ require([
             hash('!' + type + '/' + selType);
         },
         readAnchor: function() {
+            if (!hash().match(/^!\//)) {
+                console.error('hash error.');
+                return;
+            }
             let anchors = hash().slice(2).split('/');
             let type = anchors.length > 0 ? anchors[0] : null;
             let selType = anchors.length > 1 ? anchors[1] : 'nil';
