@@ -16,7 +16,7 @@ require([
         changeType: function() {
             let type = query(this.parent).query('select.type')[0].value;
             if (type != 'nil') {
-                hash('!'+type);
+                hash('!/'+type);
             }
         },
         changeArchive: function() {
