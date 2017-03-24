@@ -22,7 +22,7 @@ require([
         changeArchive: function() {
             let type = query(this.parent).query('select.type')[0].value;
             let selType = query(this.parent).query(`select.archive.${type}`)[0].value;
-            hash('!' + type + '/' + selType);
+            hash('!/' + type + '/' + selType);
         },
         readAnchor: function() {
             if (!hash().match(/^!\//)) {
