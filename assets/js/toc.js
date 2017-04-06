@@ -6,6 +6,7 @@ define([
     'dojo/mouse',
     'dojo/on',
     'dojo/dom-class',
+    'dojo/touch',
     'dojo/_base/lang'
 ], function(declare, query) {
     return declare(null, {
@@ -37,11 +38,15 @@ define([
         },
         event: function() {
             let mouse = require('dojo/mouse');
-            let self = this;
-            let on = require('dojo/on');
+            let touch = require('dojo/touch');
+            let self  = this;
+            let on    = require('dojo/on');
             if (this.tocNode) {
                 on(this.tocNode, mouse.enter, function() {
                     self.show.apply(self);
+                });
+                this.tocNode.on(touch.move, function(e) {
+                    this.emit(mouse.leave, {});
                 });
                 on(this.tocNode, mouse.leave, function() {
                     self.hide.apply(self);
