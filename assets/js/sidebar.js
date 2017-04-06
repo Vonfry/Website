@@ -1,4 +1,4 @@
-define(['dojo/query', 'dojo/dom-class', 'dojo/mouse', 'dojo/domReady!'], function(query, domClass, mouse) {
+define(['dojo/query', 'dojo/dom-class', 'dojo/mouse', 'dojo/touch', 'dojo/domReady!'], function(query, domClass, mouse, touch) {
     // set copyright placeholder height
     let footer = query('footer');
     let footerPlaceholder = query('.sidebar .footer.placeholder');
@@ -17,5 +17,8 @@ define(['dojo/query', 'dojo/dom-class', 'dojo/mouse', 'dojo/domReady!'], functio
     };
     query('.sidebar').on(mouse.enter, toggleSidebar);
     query('.sidebar').on(mouse.leave, toggleSidebar);
+    query('.sidebar').on(touch.move, function(e) {
+        this.emit(mouse.leave, {});
+    });
     return null;
 });
