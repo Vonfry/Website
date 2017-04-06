@@ -9,7 +9,7 @@ tags: haskell functor applicative monad
 嗯，继续写函数式。之前有比较过，也提及过关于类型类相关的事。这次主要写写单子吧。主要是这个东西学起来快，但是真的理解有点麻烦啊。
 
 # 函子(Functor)
-```Haskell
+```haskell
 class Functor f where
     fmap :: (a -> b) -> f a -> f b
 ```
@@ -22,7 +22,7 @@ class Functor f where
 > The only sensible reason you might want to write your own class is if you want different behaviour
 
 # 应用函子(Applicative)
-```Haskell
+```haskell
 class Functor f =>  Applicative f where
     pure :: a -> f a
     (<*>) :: f (a -> b) -> f a -> f b
@@ -39,7 +39,7 @@ class Functor f =>  Applicative f where
 # 单子(Monad)
 这是一个比较难理解的类型类，但如果理解，会惊叹其功能强大。而且这个也是Haskell用得最多的类型类。
 
-```Haskell
+```haskell
 class Applicative f => Manad f where
     join :: m (m a) -> m a
 
