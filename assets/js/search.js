@@ -43,11 +43,12 @@ define([
                     this.field('tags');
                     this.field('search_omit');
                     this.ref('id');
+                    for (let idx in data) {
+                        let addation = data[idx];
+                        addation['id'] = idx;
+                        this.add(addation);
+                    }
                 });
-                for (let idx in data) {
-                    data[idx]['id'] = idx;
-                    index.add(data[idx]);
-                }
                 self.lunrIdx = index;
                 callback.apply(self);
             });
