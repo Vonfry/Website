@@ -34,6 +34,7 @@ define([
                 self.searchJSON = data;
                 let lunrjs = require('vonfry/lib/lunrjs');
                 let index = lunrjs(function() {
+                    this.ref('id');
                     this.field('title');
                     this.field('content');
                     this.field('link');
@@ -42,10 +43,9 @@ define([
                     this.field('categories');
                     this.field('tags');
                     this.field('search_omit');
-                    this.ref('id');
                     for (let idx in data) {
                         let addation = data[idx];
-                        addation['id'] = idx;
+                        addation['id'] = idx.toString();
                         this.add(addation);
                     }
                 });
