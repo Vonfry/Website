@@ -1,8 +1,8 @@
 require([
-    'vonfry/search',
-    'vonfry/footer',
-    'vonfry/sidebar',
-    'dojo/domReady!'
-], function (Search) {
-    var search = new Search();
+    'search',
+    'footer',
+    'sidebar',
+    'lib/domReady!'
+], function (search) {
+    search.constructor();
 });

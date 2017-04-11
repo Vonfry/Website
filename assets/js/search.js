@@ -1,23 +1,17 @@
 define([
-    'dojo/_base/declare',
-    'dojo/query',
-    'dojo/NodeList-manipulate',
-    'dojo/domReady!',
-    'dojo/request',
-    'dojo/on',
-    'dojo/_base/lang',
-    'vonfry/lib/lunrjs',
-    'dojo/keys'
-], function(declare, query) {
-    return  declare(null, {
+    'require',
+    'lib/jquery',
+    'lib/lunrjs',
+], function(require, $) {
+    return {
         searchClass: 'search',
         showResult: function () {
-            query(this.resultQuery).style('display', 'block');
-            query(this.resultQuery).attr('data-show', '1');
+            $(this.resultQuery).css('display', 'block');
+            $(this.resultQuery).attr('data-show', '1');
         },
         hideResult: function () {
-            query(this.resultQuery).style('display', 'none');
-            query(this.resultQuery).attr('data-show', '0');
+            $(this.resultQuery).css('display', 'none');
+            $(this.resultQuery).attr('data-show', '0');
         },
         inputQuery: 'input[name="search"]',
         resultQuery: null,
@@ -26,13 +20,10 @@ define([
         searchJsonUrl: `${siteURL}/assets/js/search.json`,
         getSearchJSON: function(callback) {
             let self = this;
-            let request = require('dojo/request');
             // Using ajax to get a json file and return a javascript object.
-            request.get(this.searchJsonUrl, {
-                handleAs: "json"
-            }).then(function(data) {
+            $.get(this.searchJsonUrl, null, function(data) {
                 self.searchJSON = data;
-                let lunrjs = require('vonfry/lib/lunrjs');
+                let lunrjs = require('lib/lunrjs');
                 let index = lunrjs(function() {
                     this.ref('id');
                     this.field('title');
@@ -51,7 +42,7 @@ define([
                 });
                 self.lunrIdx = index;
                 callback.apply(self);
-            });
+            }, 'json');
         },
         lunrIdx: null,
         searchJSON: null,
@@ -67,48 +58,45 @@ define([
         },
         searchCallback: function(data) {
             // search callback, to show result.
-            query(`.${this.searchClass} a.item`).remove('.item');
-            query(`.${this.searchClass} .result`).attr('data-show', '1');
+            $(`.${this.searchClass} a.item`).remove('.item');
+            $(`.${this.searchClass} .result`).attr('data-show', '1');
             this.showResult();
-            let lang = require('dojo/_base/lang');
             for (let idx of data) {
                 let row = this.searchJSON[idx.ref];
-                let tpl = query(`.${this.searchClass} a.tpl`);
-                tpl = lang.clone(tpl);
+                let tpl = $(`.${this.searchClass} a.tpl`);
+                tpl = tpl.clone();
                 tpl.removeClass('tpl');
                 tpl.addClass('item');
-                tpl.query('code.date')[0].innerText = row.date;
-                tpl.query('code.title')[0].innerText = row.title;
+                tpl.find('code.date').text(row.date);
+                tpl.find('code.title').text(row.title);
                 tpl.attr('title', row.excerpt);
                 tpl.attr('href', siteURL + row.link);
                 tpl.appendTo(`.${this.searchClass} .result`);
             }
         },
         searchfunc: function(evt) {
-            let text = this.searchInput.value;
+            let text = this.searchInput.val();
             this.searchText(text);
         },
         constructor: function(config = null) {
-            declare.safeMixin(this, config);
-            this.searchInput = query(`.${this.searchClass}`).query(this.inputQuery)[0];
-            this.resultDOM = query(`.${this.searchClass}`).query('.result')[0];
+            $.extend(true, this, config);
+            this.searchInput = $(this.inputQuery, `.${this.searchClass}`);
+            this.resultDOM = $('.result', `.${this.searchClass}`);
             this.resultQuery = `.${this.searchClass} .result`;
-            query(this.resultQuery).style('bottom', query('footer')[0].clientHeight + 'px');
+            $(this.resultQuery).css('bottom', $('footer').height());
             this.bindEvt();
         },
         bindEvt: function () {
-            let on = require('dojo/on');
-            let key = require('dojo/keys');
             // bind keyboard event for '/' to make input[name="search"] focus.
             let self = this;
             let hideResult = function() {
                 self.hideResult.apply(self);
             };
-            on(document, 'keydown', function(evt) {
-                if (evt.keyCode == 191) { // '/'
+            $(document).on('keydown', function(evt) {
+                if (evt.which == 191) { // '/'
                     self.searchInput.focus();
                     event.preventDefault();
-                } else if (evt.keyCode == key.ESCAPE) {
+                } else if (evt.which == 27 /* esc */) {
                     hideResult();
                 }
             });
@@ -116,12 +104,12 @@ define([
                 self.searchfunc.apply(self);
             };
             // do search with lunr
-            on(this.searchInput, 'keydown', function(evt) {
-                if (evt.keyCode == key.ENTER) {
+            $(this.searchInput).on('keydown', function(evt) {
+                if (evt.which == 13 /* entry */) {
                     searchfunc();
                 }
             });
-            on(query(this.resultQuery).query('.esc')[0], 'click', hideResult);
+            $('.esc', this.resultQuery).on('click', hideResult);
         }
-    });
+    };
 });

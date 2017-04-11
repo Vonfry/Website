@@ -1,21 +1,21 @@
-define(['dojo/query', 'dojo/dom-class', 'dojo/mouse', 'dojo/domReady!'], function(query, domClass, mouse) {
+define(['lib/jquery'], function($) {
     // set copyright placeholder height
-    let footer = query('footer');
-    let footerPlaceholder = query('.sidebar .footer.placeholder');
-    footerPlaceholder.style('height', footer.style('height')[0]+'px');
+    let footer = $('footer');
+    let footerPlaceholder = $('.sidebar .footer.placeholder');
+    footerPlaceholder.css('height', footer.height());
 
     // set magic button event
     let toggleSidebar = function(evt) {
-        let hasPush  = domClass.contains(query('.sidebar')[0], 'push-magic');
+        let hasPush  = $('.sidebar').hasClass('push-magic');
         if (!hasPush) {
-            query('main, .sidebar').removeClass('pop-magic');
-            query('main, .sidebar').addClass('push-magic');
+            $('main, .sidebar').removeClass('pop-magic');
+            $('main, .sidebar').addClass('push-magic');
         } else {
-            query('main, .sidebar').removeClass('push-magic');
-            query('main, .sidebar').addClass('pop-magic');
+            $('main, .sidebar').removeClass('push-magic');
+            $('main, .sidebar').addClass('pop-magic');
         }
     };
-    query('.sidebar').on(mouse.enter, toggleSidebar);
-    query('.sidebar').on(mouse.leave, toggleSidebar);
+    $('.sidebar').mouseenter(toggleSidebar);
+    $('.sidebar').mouseleave(toggleSidebar);
     return null;
 });

@@ -24,8 +24,7 @@
         <script charset="utf-8">
             var siteURL = "{{ site.url }}";
         </script>
-        <script src="{{ site.url }}/assets/js/dojoConfig.js"  charset="utf-8"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/dojo/1.10.4/dojo.js" data-dojo-config="async: true"></script>
+        <script data-main="{{ site.url }}/assets/js/requireConfig.js" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
     </head>
     <body data-scrollbar>
         {% include sidebar.html %}

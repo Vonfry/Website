@@ -1,5 +1,5 @@
-define(['dojo/query', 'dojo/domReady!'], function(query) {
-    let height = query('footer').style('height')[0];
-    query('.footer.placeholder').style('height', height + 'px');
+define(['lib/jquery', 'lib/domReady!'], function($) {
+    let height = $('footer').height();
+    $('.footer.placeholder').height(height);
     return null;
 });
