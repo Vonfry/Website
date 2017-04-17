@@ -1,7 +1,8 @@
 require([
     'lib/jquery',
+    'lib/lunrjs',
     'lib/domReady!'
-], function($) {
+], function($, lunrjs) {
     var archive = {
         parent: 'main.archive',
         changeType: function() {
@@ -21,7 +22,7 @@ require([
                 console.error('hash error.');
                 return;
             }
-            let anchors = urlHash.slice(2).split('/');
+            let anchors = urlHash.slice(3).split('/');
             let type = anchors.length > 0 ? anchors[0] : null;
             let selType = anchors.length > 1 ? anchors[1] : 'nil';
             if (type && !selType) {
@@ -33,7 +34,7 @@ require([
             }
             let typeDom = $('select.type', this.parent);
             typeDom.val(type);
-            selTypeDom.style('display', 'inline-block');
+            selTypeDom.css('display', 'inline-block');
             selTypeDom.val(selType);
             let unselTypeDom = $(`select.archive:not(.${type})`, this.parent);
             unselTypeDom.css('display', 'none');
@@ -58,17 +59,20 @@ require([
                     let tags = lunrjs(function() {
                         this.field("tags");
                         this.ref('id');
+                        for (let idx in data) {
+                            data[idx]['id'] = idx;
+                            this.add(data[idx]);
+                        }
                     });
                     let cats = lunrjs(function() {
                         this.field("categories");
                         this.field('search_omit');
                         this.ref('id');
+                        for (let idx in data) {
+                            data[idx]['id'] = idx;
+                            this.add(data[idx]);
+                        }
                     });
-                    for (let idx in data) {
-                        data[idx]['id'] = idx;
-                        tags.add(data[idx]);
-                        cats.add(data[idx]);
-                    }
                     self.lunrIdx.cats = cats;
                     self.lunrIdx.tags = tags;
                     callback.apply(self);
@@ -95,7 +99,7 @@ require([
             for (let idx of data) {
                 let row = this.searchJSON[idx.ref];
                 let tpl = $('a.tpl', this.parent);
-                tpl = $.clone(tpl);
+                tpl = $.extend(true, {}, tpl);
                 tpl.removeClass('tpl');
                 tpl.addClass('item');
                 tpl.find('code.date').text(row.date);
