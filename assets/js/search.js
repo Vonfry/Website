@@ -4,6 +4,7 @@ define([
     'lib/lunrjs',
 ], function(require, $) {
     return {
+        searchResultMax: 8,
         searchClass: 'search',
         showResult: function () {
             $(this.resultQuery).css('display', 'block');
@@ -53,7 +54,7 @@ define([
                 this.getSearchJSON(function() { this.searchText(text); });
                 return;
             }// else {
-            this.searchCallback(this.lunrIdx.search(text));
+            this.searchCallback(this.lunrIdx.search(text).slice(0, this.searchResultMax));
             // }
         },
         searchCallback: function(data) {
