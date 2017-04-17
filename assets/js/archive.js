@@ -7,17 +7,17 @@ require([
         changeType: function() {
             let type = $(this.parent).query('select.type').val();
             if (type != 'nil') {
-                window.location.hash = '!/'+type;
+                window.location.hash = '#!/'+type;
             }
         },
         changeArchive: function() {
             let type = $('select.type', this.parent).val();
             let selType = $(`select.archive.${type}`, this.parent).val();
-            window.location.hash = '!/' + type + '/' + selType;
+            window.location.hash = '#!/' + type + '/' + selType;
         },
         readAnchor: function() {
             let urlHash = window.location.hash;
-            if (!urlHash.match(/^!\//)) {
+            if (!urlHash.match(/^#!\//)) {
                 console.error('hash error.');
                 return;
             }
