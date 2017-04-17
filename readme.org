@@ -48,5 +48,5 @@
 
 *** example
 	- [[http://mattvh.github.io/solar-theme-jekyll/][solar-theme]]
-      - [[http://victorvoid.github.io/][space]]
+      - [[https://victorvoid.github.io/space-jekyll-template/][space]]
 
