@@ -6,7 +6,7 @@ require([
     var archive = {
         parent: 'main.archive',
         changeType: function() {
-            let type = $(this.parent).query('select.type').val();
+            let type = $('select.type', this.parent).val();
             if (type != 'nil') {
                 window.location.hash = '#!/'+type;
             }
@@ -99,7 +99,7 @@ require([
             for (let idx of data) {
                 let row = this.searchJSON[idx.ref];
                 let tpl = $('a.tpl', this.parent);
-                tpl = $.extend(true, {}, tpl);
+                tpl = tpl.clone();
                 tpl.removeClass('tpl');
                 tpl.addClass('item');
                 tpl.find('code.date').text(row.date);
