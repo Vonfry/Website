@@ -1,5 +1,5 @@
 require([
-    'lib/jquery'
+    'lib/jquery',
     'lib/domReady!'
 ], function($) {
     var archive = {
