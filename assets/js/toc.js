@@ -68,8 +68,8 @@ define([
             return this.tocNode;
         },
         readHeader: function() {
-            this.toc = null;
             let self = this;
+            self.toc = null;
             $(this.query).children().each(function(idx, e) {
                 let match = e.tagName ? e.tagName.match(/h(\d)/i): false;
                 if (!(match && self.header.indexOf(parseInt(match[1])) != -1)) {
@@ -80,19 +80,25 @@ define([
                 header.title = e.innerText;
                 let toc = self.toc;
                 while (toc || !(self.toc = header)) { // Because of short-circuit evaluation
-                    header.id = $.extend(true, [], toc.id);
                     if (toc.hx < header.hx) {
-                        if (toc.child) {
+                        if (toc.next) {
+                            toc = toc.next;
+                            continue;
+                        } else if (toc.child) {
                             toc = toc.child;
+                            continue;
                         } else {
+                            header.id = $.extend(true, [], toc.id);
+                            header.id.push(0);
                             toc.child = header;
                             break;
                         }
-                            toc = toc.child;
                     } else /* if (toc.hx >= header.hx) */ {
                         if (toc.next) {
                             toc = toc.next;
+                            continue;
                         } else {
+                            header.id = $.extend(true, [], toc.id);
                             toc.next = header;
                             break;
                         }

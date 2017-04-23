@@ -24,7 +24,7 @@ layout: default
         </div>
         <div class="column tags">
             <span class="tpl">{{ tpl.tags }}</span>
-        {% for tags in page.tags %}
+        {% for tag in page.tags %}
             <a class="cnt tag-item" href="{{ site.url }}/archive/#!/tags/{{ tag }}">{{ tag }}</a>
         {% endfor %}
         </div>
