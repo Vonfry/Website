@@ -1,7 +1,7 @@
 ---
 title: 函数式编程语言之多语句思考
 date: 2017-04-19 16:00:23 +0800
-cateories: code
+categories: code
 tags: functional haskell common-lisp
 ---
 
@@ -13,7 +13,7 @@ tags: functional haskell common-lisp
 
 这样一来，如何在一个函数中处理多条语句就是一个大问题了。
 
-## lisp 
+## lisp
 对于lisp而言，所有都是list，语句也不过是list。那么这样好办了。把所有的语句当成参数传进去，然后参数当做一个list，遍利去运行。这大概就是`progn`的做法（当然，从编译器层面做的可能性更大，因为这样会比较高效点？）
 
 这个完全依赖于lisp本身的语言特性
