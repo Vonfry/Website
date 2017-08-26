@@ -28,8 +28,28 @@ user_title: vonfry
 email: vonfry314@gmail.com
 twitter_username: Vonfry314
 github_username:  VonFry
-# gplus_username:  loremipsum
-# disqus_username: loremipsum
+# gplus_username:  false
+# disqus_username: false
+profile_picture: https://avatars2.githubusercontent.com/u/3413119?v=4&u=cad68b19a2bebe37ec0a7b6c91bc43e0591b5231&s=400
+
+# Links to include in menu navigation
+links:
+  - title: home
+    url: /
+  - title: posts
+    url: /posts
+  - title: series
+    url: /series
+  - title: tags
+    url: /tags
+  - title: about me
+    url: /about
+# projects in header index
+projects:
+  - name: dotfiles
+    url: https://github.com/VonFry/dotfiles
+  - name: aima-haskell
+    url: https://github.com/VonFry/aima-haskell
 
 # Build settings
 destination:  ./_site
@@ -44,6 +64,9 @@ keep_files:
 include:
   - .htaccess
 exclude:
+  - package.json
+  - src
+  - node_modules
   - Gemfile
   - Gemfile.lock
   - readme.org
@@ -52,7 +75,7 @@ exclude:
 highlighter: rouge
 
 # Outputting
-permalink: /:slug/
+permalink: /:title/
 paginate: 8
 paginate_path: /page:num
 timezone: Asia/Shanghai
@@ -81,3 +104,4 @@ liquid:
 # Plugins
 safe: No
 plugins: [jekyll-paginate]
+
