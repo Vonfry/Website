@@ -75,7 +75,7 @@ exclude:
 highlighter: rouge
 
 # Outputting
-permalink: /:title/
+permalink: /:slug/
 paginate: 8
 paginate_path: /page:num
 timezone: Asia/Shanghai
