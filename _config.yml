@@ -16,7 +16,7 @@
 title: 乐水榭
 email: vonfry314@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  论极语易个人博客——乐水榭，一个太极／易经爱好者，一个程序员，一个vim+emacs粉，一个lisp Hacker。
+  论极语易个人博客——乐水榭，一个太极／易经爱好者，一个程序员，一个vim+emacs粉，一个hacker。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vonfry.name" # the base hostname & protocol for your site, e.g. http://example.com
 excerpt_separator: "<!-- more -->"
