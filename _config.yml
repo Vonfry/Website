@@ -61,6 +61,7 @@ keep_files:
   - .git
   - .gitignore
   - theme
+  - _drafts
 include:
   - .htaccess
 exclude:
