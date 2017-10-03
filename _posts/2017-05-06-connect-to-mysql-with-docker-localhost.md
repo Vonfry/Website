@@ -1,8 +1,8 @@
 ---
 title: 连接本地docker内的mysql
 date: 2017-05-06 19:57:49 +0800
-categories: server
-tags: docker mysql datebase
+categories: os
+tags: docker mysql datebase server
 ---
 
 # 问题描述

@@ -1,8 +1,8 @@
 ---
 title: gentoo USE 注意点
 date: 2017-09-03 15:43:07 +0800
-categories: server
-tags: linux gentoo portage
+categories: os
+tags: linux gentoo portage server
 ---
 
 # Use flag注意点

@@ -1,8 +1,8 @@
 ---
 title: gitlab安装问题记录
 date: 2017-03-01 11:54:00 +0800
-tags: GitLab Fedora
-categories: server
+tags: GitLab Fedora server
+categories: os
 ---
 
 最近开始重新整理服务器，安装gitlab时，出现了不少问题在这里记录一下。
