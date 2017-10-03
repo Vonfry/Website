@@ -1,8 +1,8 @@
 ---
 title: 在vps中安装gentoo
 date: 2017-08-29 14:17:23 +0800
-categories: server
-tags: gentoo linux
+categories: os
+tags: gentoo linux server
 ---
 
 基本过程和平时安装一样的。参考[Handbook](https://wiki.gentoo.org/wiki/Handbook)就好了。需要注意的有几点。

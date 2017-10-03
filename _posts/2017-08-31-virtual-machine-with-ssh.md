@@ -1,8 +1,8 @@
 ---
 title: 通过ssh连接虚拟机
 date: 2017-08-31 16:52:39 +0800
-categories: server
-tags: linux ssh gentoo
+categories: os
+tags: linux ssh gentoo server
 ---
 
 # 需求
