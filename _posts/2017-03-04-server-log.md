@@ -1,8 +1,8 @@
 ---
 title: Web服务器日志分析工具
 date: 2017-03-04 21:34:00 +0800
-categories: server
-tags: fedora piwik goaccess nginx
+categories: os
+tags: fedora piwik goaccess nginx server
 ---
 
 服务器弄好了。之后就是要开始做监控了。主要是想针对流量做监控。比较好的工具有google analytics什么的，不过由于google在国内，嗯，大家懂的。所以只好找找其它的了。
