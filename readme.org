@@ -1,4 +1,7 @@
 * Website
 
-This blog use theme with space-jekyll. It will be rewriten by myself when I
-am free.
+Site: https://vonfry.name
+
+The project url: https://git.vonfry.name/Vonfry/website
+
+Github repo just a mirror.
