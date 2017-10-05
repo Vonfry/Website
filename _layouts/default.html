@@ -1,16 +1,15 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     {% include head.html %}
     <body>
-        <div class="page_posts">
         {% include svg-icons.html %}
-        {% include header-post.html %}
-        {% include tree-posts.html %}
-        </div>
+        {% include header-default.html %}
+            <main role="main" class="content">
+                {{ content }}
+            </main>
         {% include scripts.html %}
     </body>
 </html>
