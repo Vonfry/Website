@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage{fontspec,xltxtra,xunicode,hyperref}
+\usepackage[nofonts]{ctex}
+
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+
+
+% 英文字体，macOS
+\setmainfont{Helvetica}
+\setsansfont{Helvetica}
+\setmonofont{Hack}
+
+% 中文字体，macOS
+\setCJKmainfont[BoldFont=STHeitiSC-Medium, ItalicFont=STHeitiSC-Light]{SIL-Hei-Med-Jian}
+\setCJKsansfont[BoldFont=STHeitiSC-Medium]{SIL-Hei-Med-Jian}
+\setCJKmonofont{SIL-Kai-Reg-Jian}
+
+% 从零开始计录章节
+\setcounter{section}{-1}
+
+% 开启索引，xelatex限定
+\usepackage{imakeidx}
+\makeindex
+
+% 信息
+\title{用乘法实现除法}
+\author{论极语易-Vonfry}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+ 正文
+\section{题设}
+用乘法实现除法
+
+\section{证明}
+
+\noindent
+假设 $ Q = frac{N}{D} $，则：
+\begin{align*}
+    Z &= 1 - D \\
+    Q &= \frac{N}{D} = froc{N(1+Z)}{D(1+Z)} \\
+    &= \frac{N(1+Z)}{(1-Z)(1+Z)} \\
+    &= \frac{N(1+Z)}{1-Z^2}
+\end{align*}
+用$K = 1+Z^2$重复这个过程
+\begin{align*}
+    Q &= \frac{N(1+Z)}{1-Z^2} \cdot \frac{1+Z^2}{1+Z^2} \\
+    &= \frac{N(1+Z)(1+Z^2)}{1-Z^4} \\
+\end{align*}
+重复N次
+\begin{align*}
+    & Q = \frac{N}{D} = \frac{N(1+Z)(1+Z^2)(1+Z^3)\dots (1+Z^{2n-1})}{1-Z^{2n-1}} \\
+    & \because Z < 1 \Rightarrow  \lim_{N\to 0}Z^{2n-1}=0\\
+    & \therefore Q = N(1+Z)(1+Z^2)(1+Z^3)\dots (1+Z^{2n-1})
+\end{align*}
+对于8位精度，只需要$n=3$即可，而$n=5$则有32位精度。
+
+\end{document}
