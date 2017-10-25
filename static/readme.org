@@ -10,3 +10,4 @@ Saving theme's and pages' assets  in assets dir. And this dir saves files for bl
 - org     :: org files
 - sources :: tex or dot files
 
+All files in these dir should be under a dir named by the post's date.
