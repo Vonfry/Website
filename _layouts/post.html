@@ -18,9 +18,40 @@
             </article>
 
             {% include share.html %}
+            {% comment no-use-commend %}
             {% include comments.html %}
+            {% endcomment no-use-commend %}
             {% include footer.html %}
             {% include scripts.html %}
         </section>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    inlineMath: [['$','$'], ['\\(','\\)']],
+                    preview: "TeX"
+                },
+                displayAlign: "left",
+                displayIndent: "0em",
+                SVG: {
+                    styles: {
+                        ".MathJax_SVG_Display": {
+                            "text-align": "left",
+                            "max-width": "50rem",
+                            "padding": "0 3.25rem",
+                            "margin": "0 auto 1.875rem",
+                            "font-family": "'Open Sans',sans-serif",
+                            "font-weight": "300",
+                            "font-style": "normal",
+                            "font-size": "1.125rem",
+                            "line-height": "2",
+                            "letter-spacing": ".01rem"
+                        }
+                    }
+                }
+            });
+        </script>
+        <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_SVG">
+        </script>
     </body>
 </html>
