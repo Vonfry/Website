@@ -17,7 +17,7 @@ downloads:
 $$
 \begin{align*}
     Z &= 1 - D \\
-    Q &= \frac{N}{D} = froc{N(1+Z)}{D(1+Z)} \\
+    Q &= \frac{N}{D} = \frac{N(1+Z)}{D(1+Z)} \\
     &= \frac{N(1+Z)}{(1-Z)(1+Z)} \\
     &= \frac{N(1+Z)}{1-Z^2}
 \end{align*}
@@ -46,3 +46,5 @@ $$
 
 ## 完
 就是这样。
+
+
