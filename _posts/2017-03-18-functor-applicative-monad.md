@@ -22,7 +22,7 @@ class Functor f where
 > The only sensible reason you might want to write your own class is if you want different behaviour
 
 # 应用函子(Applicative)
-在考虑应用函子之前，我们先想一下`fmap`的原型。它只接收一个参数返回一个值的函数！虽然`(->) a`可以看成一个函数，但是如果我们需要对参数进行检测呢？比如`Just a | Nothing`，在函子的情况下，我们需要对每一种情况写一种匹配，3个参数就有大概8种可能。也就是$$ 2^n $$种情况。
+在考虑应用函子之前，我们先想一下`fmap`的原型。它只接收一个参数返回一个值的函数！虽然`(->) a`可以看成一个函数，但是如果我们需要对参数进行检测呢？比如`Just a | Nothing`，在函子的情况下，我们需要对每一种情况写一种匹配，3个参数就有大概8种可能。也就是$ 2^n $种情况。
 
 这样就出现了应用函子。
 ```haskell
