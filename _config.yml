@@ -32,22 +32,32 @@ profile_picture: https://avatars2.githubusercontent.com/u/3413119?v=4&u=cad68b19
 
 # Links to include in menu navigation
 links:
-  - title: home
-    url: /
-  - title: posts
-    url: /posts
-  - title: series
-    url: /series
-  - title: tags
-    url: /tags
-  - title: about me
-    url: /about
+  nav:
+    - title: home
+      url: /
+      key_trigger: h
+    - title: posts
+      url: /posts
+      key_trigger: p
+    - title: series
+      url: /series
+      key_trigger: s
+    - title: tags
+      url: /tags
+      key_trigger: t
+    - title: about me
+      url: /about
+      key_trigger: a
 # projects in header index
 projects:
+  - name: github
+    url: https://github.com/VonFry
   - name: dotfiles
     url: https://github.com/VonFry/dotfiles
   - name: aima-haskell
     url: https://github.com/VonFry/aima-haskell
+  - name: yiyd
+    url: https://github.com/VonFry/yiyd
 
 # Build settings
 destination:  ./_site
@@ -55,6 +65,11 @@ markdown: kramdown
 theme: minima
 sass:
   style: compressed
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
 keep_files:
   - .git
   - .gitignore
