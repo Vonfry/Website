@@ -2,7 +2,7 @@
 title: 娱乐，故事，深度，中庸
 date: 2018-01-07 13:33:01 +0800
 categories: script
-tags: story depth moderation entertainment
+tags: story depth moderation entertainment ghost
 ---
 
 # 前言
@@ -69,7 +69,6 @@ tags: story depth moderation entertainment
 
 ## 再思考
 
-再回归攻壳，现在来想想，笑面男的反抗，不也是一种么？但是哪里的问题呢？总觉得攻壳，少了那么点意思。少了那么点什么东西呢？是因为问题太老生长谈了已经看腻了么？亦或者，我现在思考能力不如以前了么？
-
+再回归攻壳，现在来想想，笑面男的反抗，提出了stand alone complex的集体无意识，在集体中存异，不也是一种么？那么是哪里的问题呢？总觉得攻壳，少了那么点意思。少了那么点什么东西呢？是因为问题太老生长谈了已经看腻了么？亦或者，我现在思考能力不如以前了么？
 
 
