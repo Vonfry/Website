@@ -1,7 +1,7 @@
 ---
 title: 《上帝掷骰子》-量子力学史话 笔记
 date: 2017-04-19 09:28:00 +0800
-categories: physics
+categories: physics extract
 tags: quantum-mechanics
 ---
 
@@ -46,3 +46,5 @@ tags: quantum-mechanics
 无边界假设
 
 任何粒子其实都不是传统意义上的点，而是开放或者闭合的弦。
+
+
