@@ -1,5 +1,5 @@
 ---
-title: 解题 笔记
+title: 如何解题 笔记
 date: 2018-01-11 18:35:03 +0800
 categories: mathematical extract
 tags: solve
