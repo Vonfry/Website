@@ -1,7 +1,7 @@
 ---
 title: 从vim转至emacs的理由
 date: 2017-07-26 10:23:17 +0800
-categories: code
+categories: develop
 tags: vim emacs
 ---
 

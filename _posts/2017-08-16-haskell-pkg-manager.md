@@ -1,7 +1,7 @@
 ---
 title: haskell包管理处理
 date: 2017-08-16 08:19:27 +0800
-categories: code
+categories: develop
 tags: pkg haskell cabal stack
 ---
 

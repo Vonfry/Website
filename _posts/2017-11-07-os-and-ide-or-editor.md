@@ -1,7 +1,7 @@
 ---
 title: 操作系统与IDE或编辑器
 date: 2017-11-07 12:38:47 +0800
-categories: code
+categories: develop
 tags: os ide editor emacs command-line
 ---
 

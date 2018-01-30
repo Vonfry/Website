@@ -1,7 +1,7 @@
 ---
 title: emacs自配置或使用spacemacs
 date: 2017-08-03 00:46:30 +0800
-categories: code
+categories: develop
 tags: emacs spacemacs configure vim
 ---
 
