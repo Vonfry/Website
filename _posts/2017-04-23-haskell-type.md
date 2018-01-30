@@ -1,7 +1,7 @@
 ---
 title: Haskell类型限制
 date: 2017-04-23 13:06:18 +0800
-categories: code
+categories: develop
 tags: haskell type-annotation
 ---
 

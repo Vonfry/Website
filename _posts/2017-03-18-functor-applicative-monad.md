@@ -1,7 +1,7 @@
 ---
 title: 函子，应用函子，单子
 date:  2017-03-18 12:38:47 +0800
-categories: code
+categories: develop
 tags: haskell functor applicative monad
 ---
 

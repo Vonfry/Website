@@ -1,7 +1,7 @@
 ---
 title: 求值环境模型
 date: 2017-07-09 15:43:01 +0800
-categories: code
+categories: develop
 tags: sicp lisp haskell python javascript
 ---
 # 记录为主
@@ -54,7 +54,7 @@ See more: [SICP Article](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-2
 ### Haskell
 这个问题在haskell根本不存在。因为，它根本不存在赋值啊。这个语言本身就是无负作用的。我们根本写不出带有负作用的函数吧。在haskell中，我们怎么改变参数的值，不存在这样的方法的。能做的仅仅是给一个绑定罢了。但这个绑定又是一个新的环境了，不会影响到之前的环境。
 
-### python 
+### python
 嗯。。python不允许这样做。在内层函数里，你可以引用，这个外层的参数，但是不能修改他。不然就会将这个参数，视为内层的局布变量从而报出未定义的错误。
 
 ### javascript

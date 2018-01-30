@@ -1,7 +1,7 @@
 ---
 title: 记一次作业程序
 date: 2017-03-05 12:48:00 +0800
-categories: code
+categories: develop
 tags: test python3
 ---
 

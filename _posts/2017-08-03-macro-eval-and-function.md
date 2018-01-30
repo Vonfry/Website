@@ -1,7 +1,7 @@
 ---
 title: 宏，eval，函数
 date: 2017-08-03 22:51:21 +0800
-categories: code
+categories: develop
 tags: emacs lisp
 ---
 
