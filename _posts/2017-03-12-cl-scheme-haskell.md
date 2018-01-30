@@ -1,6 +1,6 @@
 ---
 title: CL与Scheme与Haskell
-categories: code
+categories: develop
 tags: common-lisp scheme haskell
 date: 2017-03-12 16:03:00 +0800
 ---
