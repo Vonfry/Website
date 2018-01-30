@@ -1,7 +1,7 @@
 ---
 title: 函数式编程语言之多语句思考
 date: 2017-04-19 16:00:23 +0800
-categories: code
+categories: develop
 tags: functional haskell common-lisp
 ---
 

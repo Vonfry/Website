@@ -1,7 +1,7 @@
 ---
 title: 使用git查找bug
 date: 2017-12-24 19:32:21 +0800
-categories: code
+categories: develop
 tags: git bug
 ---
 

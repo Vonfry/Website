@@ -1,7 +1,7 @@
 ---
 title: 开发工具相关插error记录
 date: 2017-11-05 12:49:38 +0800
-categories: code
+categories: develop
 tags: emacs intero irony
 ---
 
