@@ -84,6 +84,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - readme.org
+  - vendor
+  - _sites
 
 # Conversion
 highlighter: rouge
