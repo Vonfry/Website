@@ -3,8 +3,8 @@
 title: 数学教育
 date: 2018-04-25 19:29:21 +0800
 categories: mathematical
-
-## tags: education
+tags: education
+---
 
 ## 起因
 
