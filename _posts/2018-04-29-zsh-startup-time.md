@@ -1,10 +1,9 @@
 ---
-
 title: zsh启动时间优化
 date: 2018-04-29 15:28:21 +0800
 categories: develop
-
-## tags: zsh shell startup
+tags: zsh shell startup
+---
 
 ## 查找问题
 
