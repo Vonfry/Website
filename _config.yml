@@ -52,6 +52,8 @@ links:
 projects:
   - name: github
     url: https://github.com/VonFry
+  - name: awesome
+    url: https://github.com/VonFry/awesome
   - name: dotfiles
     url: https://github.com/VonFry/dotfiles
   - name: aima-haskell
