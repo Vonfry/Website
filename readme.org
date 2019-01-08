@@ -2,6 +2,6 @@
 
 Site: https://vonfry.name
 
-The project url: https://git.vonfry.name/Vonfry/website
+The project url: https://gitlab.com/Vonfry/website
 
 Github repo just a mirror.
