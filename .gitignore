@@ -377,3 +377,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/vim,tags,macos,linux,windows,latex,jekyll,ruby
+public/
