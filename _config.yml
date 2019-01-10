@@ -50,16 +50,18 @@ links:
       key_trigger: a
 # projects in header index
 projects:
+  - name: gitlab
+    url: https://gitlab.com/Vonfry
   - name: github
-    url: https://github.com/VonFry
+    url: https://github.com/Vonfry
   - name: awesome
-    url: https://github.com/VonFry/awesome
+    url: https://gitlab.com/Vonfry/awesome
   - name: dotfiles
-    url: https://github.com/VonFry/dotfiles
+    url: https://gitlab.com/Vonfry/dotfiles
   - name: aima-haskell
-    url: https://github.com/VonFry/aima-haskell
+    url: https://gitlab.com/Vonfry/aima-haskell
   - name: yiyd
-    url: https://github.com/VonFry/yiyd
+    url: https://gitlab.com/Vonfry/yiyd
 
 # Build settings
 destination:  ./_site
