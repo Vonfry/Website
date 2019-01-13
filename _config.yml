@@ -26,8 +26,6 @@ username: Vonfry
 user_description: 论极语易-Vonfry
 user_title: vonfry
 email: mail@vonfry.name
-twitter_username: Vonfry314
-github_username:  VonFry
 
 # Build settings
 destination:  ./_site
@@ -87,7 +85,7 @@ liquid:
   error_mode: warn
 
 # Plugins
-safe: No
+safe: false
 plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
@@ -116,3 +114,21 @@ mathjax: true.
 search_full_content: true
 category_archive_path: "/categories/#"
 tag_archive_path: "/tags/#"
+author:
+  name: Vonfry
+  twitter: Vonfry314
+  picture: /static/images/_default/logo.jpg
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/Vonfry314
+    icon: fab fa-twitter-square
+  - title: GitLab
+    url: https://gitlab.com/Vonfry
+    icon: fab fa-gitlab
+  - title: GitHub
+    url: https://github.com/Vonfry
+    icon: fab fa-github-square
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square
+copyright: "This site is made with <3 by *me, myself, and I*."
