@@ -25,48 +25,15 @@ excerpt_separator: "<!-- more -->"
 username: Vonfry
 user_description: 论极语易-Vonfry
 user_title: vonfry
-email: vonfry314@gmail.com
+email: mail@vonfry.name
 twitter_username: Vonfry314
 github_username:  VonFry
-profile_picture: https://avatars2.githubusercontent.com/u/3413119?v=4&u=cad68b19a2bebe37ec0a7b6c91bc43e0591b5231&s=400
-
-# Links to include in menu navigation
-links:
-  nav:
-    - title: home
-      url: /
-      key_trigger: h
-    - title: posts
-      url: /posts
-      key_trigger: p
-    - title: series
-      url: /series
-      key_trigger: s
-    - title: tags
-      url: /tags
-      key_trigger: t
-    - title: about me
-      url: /about
-      key_trigger: a
-# projects in header index
-projects:
-  - name: gitlab
-    url: https://gitlab.com/Vonfry
-  - name: github
-    url: https://github.com/Vonfry
-  - name: awesome
-    url: https://gitlab.com/Vonfry/awesome
-  - name: dotfiles
-    url: https://gitlab.com/Vonfry/dotfiles
-  - name: aima-haskell
-    url: https://gitlab.com/Vonfry/aima-haskell
-  - name: yiyd
-    url: https://gitlab.com/Vonfry/yiyd
 
 # Build settings
 destination:  ./_site
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-so-simple
+
 sass:
   style: compressed
 compress_html:
@@ -96,8 +63,6 @@ highlighter: rouge
 
 # Outputting
 permalink: /:slug/
-paginate: 8
-paginate_path: /page:num
 timezone: Asia/Shanghai
 encoding: utf-8
 
@@ -123,5 +88,29 @@ liquid:
 
 # Plugins
 safe: No
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate-v2]
 
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 16
+  permalink: '/page/:num/'
+  title: ':title - # :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
+  extension: html
+  indexpage: 'index'
+
+# Theme config
+mathjax: true.
+search_full_content: true
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
