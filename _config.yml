@@ -20,6 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vonfry.name" # the base hostname & protocol for your site, e.g. http://example.com
 excerpt_separator: "<!-- more -->"
+logog: static/images/_default/logo.jpg
 
 # User settings
 username: Vonfry
@@ -103,6 +104,18 @@ pagination:
     after: 2
   extension: html
   indexpage: 'index'
+autopages:
+  enabled: true
+  categories:
+    layouts:
+      - 'category'
+    # title: 'Posts in category :cat'
+    permalink: '/category/:cat'
+  tags:
+    layouts:
+      - 'tag'
+    # title: 'Posts tagged with :tag'
+    permalink: '/tag/:tag'
 
 # Theme config
 mathjax: true.
@@ -112,7 +125,7 @@ tag_archive_path: "/tags/#"
 author:
   name: Vonfry
   twitter: Vonfry314
-  picture: /static/images/_default/logo.jpg
+  picture: static/images/_default/logo.jpg
 footer_links:
   - title: Twitter
     url: https://twitter.com/Vonfry314
