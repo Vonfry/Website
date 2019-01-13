@@ -20,53 +20,19 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vonfry.name" # the base hostname & protocol for your site, e.g. http://example.com
 excerpt_separator: "<!-- more -->"
+logog: static/images/_default/logo.jpg
 
 # User settings
 username: Vonfry
 user_description: 论极语易-Vonfry
 user_title: vonfry
-email: vonfry314@gmail.com
-twitter_username: Vonfry314
-github_username:  VonFry
-profile_picture: https://avatars2.githubusercontent.com/u/3413119?v=4&u=cad68b19a2bebe37ec0a7b6c91bc43e0591b5231&s=400
-
-# Links to include in menu navigation
-links:
-  nav:
-    - title: home
-      url: /
-      key_trigger: h
-    - title: posts
-      url: /posts
-      key_trigger: p
-    - title: series
-      url: /series
-      key_trigger: s
-    - title: tags
-      url: /tags
-      key_trigger: t
-    - title: about me
-      url: /about
-      key_trigger: a
-# projects in header index
-projects:
-  - name: gitlab
-    url: https://gitlab.com/Vonfry
-  - name: github
-    url: https://github.com/Vonfry
-  - name: awesome
-    url: https://gitlab.com/Vonfry/awesome
-  - name: dotfiles
-    url: https://gitlab.com/Vonfry/dotfiles
-  - name: aima-haskell
-    url: https://gitlab.com/Vonfry/aima-haskell
-  - name: yiyd
-    url: https://gitlab.com/Vonfry/yiyd
+email: mail@vonfry.name
 
 # Build settings
 destination:  ./_site
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-so-simple
+
 sass:
   style: compressed
 compress_html:
@@ -74,32 +40,25 @@ compress_html:
   comments: all
   endings: []
   profile: false
-keep_files:
-  - .git
-  - .gitignore
-  - theme
-  - _drafts
 include:
   - .htaccess
 exclude:
-  - package.json
-  - src
-  - node_modules
   - Gemfile
   - Gemfile.lock
   - readme.org
   - vendor
   - _sites
+  - .git
+  - .gitignore
+  - _drafts
 
 # Conversion
 highlighter: rouge
 
 # Outputting
 permalink: /:slug/
-paginate: 8
-paginate_path: /page:num
-timezone: Asia/Shanghai
-encoding: utf-8
+timezone: "Asia/Shanghai"
+encoding: "UTF-8"
 
 quiet: false
 verbose: false
@@ -122,6 +81,62 @@ liquid:
   error_mode: warn
 
 # Plugins
-safe: No
-plugins: [jekyll-paginate]
+safe: false
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sitemap
 
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 16
+  permalink: '/page/:num/'
+  title: ':title - # :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
+  extension: html
+  indexpage: 'index'
+autopages:
+  enabled: true
+  categories:
+    layouts:
+      - 'category'
+    # title: 'Posts in category :cat'
+    permalink: '/category/:cat'
+  tags:
+    layouts:
+      - 'tag'
+    # title: 'Posts tagged with :tag'
+    permalink: '/tag/:tag'
+
+# Theme config
+mathjax: true.
+search_full_content: true
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
+author:
+  name: Vonfry
+  twitter: Vonfry314
+  picture: static/images/_default/logo.jpg
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/Vonfry314
+    icon: fab fa-twitter-square
+  - title: GitLab
+    url: https://gitlab.com/Vonfry
+    icon: fab fa-gitlab
+  - title: GitHub
+    url: https://github.com/Vonfry
+    icon: fab fa-github-square
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square
+copyright: "This site is made with <3 by *me, myself, and I*."
