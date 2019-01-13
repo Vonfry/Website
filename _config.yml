@@ -39,30 +39,25 @@ compress_html:
   comments: all
   endings: []
   profile: false
-keep_files:
-  - .git
-  - .gitignore
-  - theme
-  - _drafts
 include:
   - .htaccess
 exclude:
-  - package.json
-  - src
-  - node_modules
   - Gemfile
   - Gemfile.lock
   - readme.org
   - vendor
   - _sites
+  - .git
+  - .gitignore
+  - _drafts
 
 # Conversion
 highlighter: rouge
 
 # Outputting
 permalink: /:slug/
-timezone: Asia/Shanghai
-encoding: utf-8
+timezone: "Asia/Shanghai"
+encoding: "UTF-8"
 
 quiet: false
 verbose: false
