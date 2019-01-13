@@ -11,19 +11,17 @@ ruby RUBY_VERSION
 # Happy Jekylling!
 gem "jekyll"
 
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima"
 
+gem "jekyll-theme-so-simple"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
-gem "org-ruby"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
     # gem "jekyll-org" # github: https://raw.githubusercontent.com/eggcaker/jekyll-org/master/lib/jekyll-org.rb
     gem "jekyll-feed"
     gem "jekyll-sitemap"
-    gem "jekyll-paginate"
-    gem 'jekyll-compose'
+    gem "jekyll-paginate-v2"
+    gem "jekyll-compose"
 end
