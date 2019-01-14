@@ -14,13 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 乐水榭
-email: vonfry314@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  论极语易个人博客——乐水榭，一个太极／易经爱好者，一个程序员，一个vim+emacs粉，一个hacker。
+  Just for fun.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vonfry.name" # the base hostname & protocol for your site, e.g. http://example.com
 excerpt_separator: "<!-- more -->"
-logog: static/images/_default/logo.jpg
+locale: "zh-CN"	
 
 # User settings
 username: Vonfry
@@ -83,49 +82,17 @@ liquid:
 # Plugins
 safe: false
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-paginate
   - jekyll-sitemap
 
-pagination:
-  enabled: true
-  debug: false
-  collection: 'posts'
-  per_page: 16
-  permalink: '/page/:num/'
-  title: ':title - # :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: ''
-  trail:
-    before: 2
-    after: 2
-  extension: html
-  indexpage: 'index'
-autopages:
-  enabled: true
-  categories:
-    layouts:
-      - 'category'
-    # title: 'Posts in category :cat'
-    permalink: '/category/:cat'
-  tags:
-    layouts:
-      - 'tag'
-    # title: 'Posts tagged with :tag'
-    permalink: '/tag/:tag'
+paginate: 8
+paginate_path: /page:num/
 
 # Theme config
 mathjax: true.
 search_full_content: true
 category_archive_path: "/categories/#"
 tag_archive_path: "/tags/#"
-author:
-  name: Vonfry
-  twitter: Vonfry314
-  picture: static/images/_default/logo.jpg
 footer_links:
   - title: Twitter
     url: https://twitter.com/Vonfry314
@@ -140,3 +107,4 @@ footer_links:
     url: atom.xml
     icon: fas fa-rss-square
 copyright: "This site is made with <3 by *me, myself, and I*."
+logo: static/images/default/logo.jpg

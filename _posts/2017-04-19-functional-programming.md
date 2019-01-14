@@ -4,6 +4,7 @@ date: 2017-04-19 16:00:23 +0800
 categories: develop
 tags: functional haskell common-lisp
 ---
+<!-- more -->
 
 # 函数
 先来说说一函数吧。对于大部分编程语言来说，函数是一组语句（准确来说是表达试）的集合。对于这些语言来说，语句是基元。

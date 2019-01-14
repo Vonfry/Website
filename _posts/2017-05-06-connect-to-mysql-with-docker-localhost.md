@@ -7,6 +7,7 @@ tags: docker mysql datebase server
 
 # 问题描述
 docker开起一个对本地的mysql后（Port已设置），但运行`mysql -u root -p`后会出错
+<!-- more -->
 
 # 解
 其实是`mysql`对`localhost`这个地址，会自动检查本地的进程，然后不是通过一般网络访问，而是直接进行套接字串输，而对于我们用docker，当然没有sock文件和对应的进程啊！！

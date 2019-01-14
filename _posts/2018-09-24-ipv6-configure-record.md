@@ -3,11 +3,10 @@ title: ipv6配置记录
 date: 2018-09-24 18:23:30 +0800
 categories: develop
 tags: ipv6 linux
-
-
 ---
 
 最近配置ipv6，出了不少问题。这里记录一下。
+<!-- more -->
 
 ## 配置
 

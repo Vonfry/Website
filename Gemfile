@@ -18,9 +18,8 @@ gem "jekyll-theme-so-simple"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-    # gem "jekyll-org" # github: https://raw.githubusercontent.com/eggcaker/jekyll-org/master/lib/jekyll-org.rb
     gem "jekyll-feed"
-    gem "jekyll-sitemap"
-    gem "jekyll-paginate-v2"
+    gem "jekyll-paginate"
     gem "jekyll-compose"
+    gem "jekyll-sitemap"
 end
