@@ -6,6 +6,7 @@ tags: emacs lisp
 ---
 
 本文以lisp为主
+<!-- more -->
 
 # 函数(function)
 

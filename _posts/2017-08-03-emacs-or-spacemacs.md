@@ -5,6 +5,7 @@ categories: develop
 tags: emacs spacemacs configure vim
 ---
 
+<!-- more -->
 # 为什么使用emacs或vim
 
 1. 高定制性

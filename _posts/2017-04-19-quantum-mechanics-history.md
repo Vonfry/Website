@@ -6,6 +6,7 @@ tags: quantum-mechanics
 ---
 
 一个希望与众多科学问题搏斗的人最好还是远离大都市。 —— 亥姆霍兹 to Hz
+<!-- more -->
 
 以太
 
