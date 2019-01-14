@@ -4,6 +4,7 @@ date: 2019-01-12 20:09:12 +0800
 categories: dev
 tags: lang lisp haskell type ocaml
 ---
+<!-- more -->
 
 ## 工具？并不
 

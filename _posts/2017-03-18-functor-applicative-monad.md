@@ -7,6 +7,7 @@ tags: haskell functor applicative monad
 
 # Haskell
 嗯，继续写函数式。之前有比较过，也提及过关于类型类相关的事。这次主要写写单子吧。主要是这个东西学起来快，但是真的理解有点麻烦啊。
+<!-- more -->
 
 # 函子(Functor)
 ```haskell

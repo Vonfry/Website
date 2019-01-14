@@ -9,6 +9,7 @@ categories: develop
 tags: haskell ruby stackoverflow recursion
 
 ---
+<!-- more -->
 
 ## 起因
 

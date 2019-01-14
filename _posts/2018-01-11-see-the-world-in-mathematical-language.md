@@ -5,6 +5,7 @@ categories: mathematical extract
 tags: live
 ---
 
+<!-- more -->
 ## 从不确定的信息中作出判断
 
 当我们必须要从不确定 的信息中作出判断时，应如何是好？

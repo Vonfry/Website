@@ -5,6 +5,7 @@ categories: develop
 tags: zsh shell startup
 ---
 
+<!-- more -->
 ## 查找问题
 
 添加`zmodload zsh/zprof`到zsh读取的第一个配置文件最上方，一般是zshrc。然后跑`zprof`就可能看到详细的加载时间了。然后分析吧。

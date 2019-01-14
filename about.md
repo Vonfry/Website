@@ -17,5 +17,3 @@ layout: page
 平日使用`Vim`与`Emacs`写代码。具体用哪个？看心情吧。
 主开发环境为`macOS`，其次为`Gentoo`，尝试`Nix`中。
 关于开发，更多请见[dotfiles](https://gitlab.com/Vonfry/dotfiles)和[awesome](https://gitlab.com/Vonfry/awesome)。
-
-
