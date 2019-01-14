@@ -1,7 +1,7 @@
 ---
 title: macos commandline version
 date: 2018-07-12 09:30:52 +0800
-categories: dev
+categories: develop
 tags: macos
 ---
 
