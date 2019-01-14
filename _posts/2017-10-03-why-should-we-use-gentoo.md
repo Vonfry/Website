@@ -8,6 +8,7 @@ tags: gentoo linux server
 # Gentoo
 
 关于Gentoo是什么这里就说了，不知道的朋友请自行查找或者不要使用这个东西了。
+<!-- more -->
 
 ## Portage
 
