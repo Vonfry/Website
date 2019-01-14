@@ -1,7 +1,7 @@
 ---
 title: 编程语言的思考
 date: 2019-01-12 20:09:12 +0800
-categories: dev
+categories: develop
 tags: lang lisp haskell type ocaml
 ---
 <!-- more -->
