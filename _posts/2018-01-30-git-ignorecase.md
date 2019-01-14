@@ -4,6 +4,7 @@ date: 2018-01-30 21:50:34 +0800
 categories: develop
 tags: git
 ---
+<!-- more -->
 
 # 说明
 

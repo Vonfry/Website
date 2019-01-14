@@ -6,6 +6,7 @@ tags: linux gentoo portage server
 ---
 
 # Use flag注意点
+<!-- more -->
 
 大部分在文档里都写了，但是有一些内容，并没有在文档中详细说明，可是如果不这样做，会经常出现问题的！！！
 
