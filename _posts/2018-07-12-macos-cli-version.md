@@ -5,8 +5,7 @@ categories: dev
 tags: macos
 ---
 
-
-
+<!-- more -->
 ## 起因
 
 安装llvm时出现了编译错误，准确来说是lldb时。
