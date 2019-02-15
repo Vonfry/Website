@@ -1,7 +1,7 @@
 ---
 title: nixos使用与开发配置
 date: 2019-01-29 12:14:27 +0800
-categories: dev
+categories: develop
 tags: nix nixos
 ---
 

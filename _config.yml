@@ -103,7 +103,7 @@ footer_links:
     url: https://github.com/Vonfry
     icon: fab fa-github-square
   - title: Feed
-    url: atom.xml
+    url: feed.xml
     icon: fas fa-rss-square
 copyright: "This site is made with <3 by *me, myself, and I*."
 logo: static/images/default/logo.jpg
