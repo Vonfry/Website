@@ -16,6 +16,8 @@
 title: 乐水榭 | 论极语易-Vonfry 博客
 description: > # this means to ignore newlines until "baseurl:"
   Just for fun.
+  不会记录非常复杂的东西（那种东西在脑子里，也懒得写成博客）。
+  主要用于记录开发中的小问题和一些理解。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vonfry.name" # the base hostname & protocol for your site, e.g. http://example.com
 excerpt_separator: "<!-- more -->"
