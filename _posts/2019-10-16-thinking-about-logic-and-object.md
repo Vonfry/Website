@@ -1,3 +1,4 @@
+---
 title: 对逻辑与物质的思考
 date: 2019-10-16 16:40:04 +0800
 categories: philosophy
