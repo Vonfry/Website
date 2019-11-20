@@ -17,9 +17,11 @@ setup-hook是分放在不同的两个章节且没有跳转或说明。
 
 ## mkDerivate
 
+### setup-hook
+
 首先，在nix里的derivate会使用`bulider`。在nixpkgs里，这个被自动设置为`
-pkgs/stdenv/generic`内的`builder.sh`，这个文件主要使用了`setup.sh`和
-`genericBuild`。这两处在nixpkgs文档里有提到，另外，文档里还提到的有setup-hook和
+<nixpkgs/pkgs/stdenv/generic/builder.sh>`内，这个文件主要使用了同目录下的`setup.sh
+`和`genericBuild`。这两处在nixpkgs文档里有提到，另外，文档里还提到的有setup-hook和
 一些内建的setup-hook。在`setup.sh`中，仅仅定义的hook的注册和运行，并没有具体的hook
 ，这些具体的hook是什么时候从什么地方如何注册的呢？
 
@@ -27,6 +29,12 @@ pkgs/stdenv/generic`内的`builder.sh`，这个文件主要使用了`setup.sh`�
 种包内，然后`mkDerivate`有一个setup-hook的参数，这个参数就是用来说明将对应的hook
 进行注册到运行环境中(`nix-support`内)。所以当我们在`nativeBuildInput`中包含cmake
 后，在安装cmake过程中，这个hook就被自动安装了。对应其它的wrapper也是一样的。
+
+### outputs
+
+很多nixpkgs的包内有多个outputs，但没有显示给出对应outputs的install或者使用他们，
+这一过程被也被mkDerivate自动化了(`<nixpkgs/pkgs/build-support/setup-hooks/multiple-outputs.sh>`)
+。
 
 ## placeholder
 
