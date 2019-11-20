@@ -34,7 +34,9 @@ setup-hook是分放在不同的两个章节且没有跳转或说明。
 
 很多nixpkgs的包内有多个outputs，但没有显示给出对应outputs的install或者使用他们，
 这一过程被也被mkDerivate自动化了(`<nixpkgs/pkgs/build-support/setup-hooks/multiple-outputs.sh>`)
-。
+。这一过程主要有对outputs相关shell变量的设置和configureFlags。当然，这只是针对默
+认configure的情况，而其它比如cmake，可以查看cmake下的setup-hook。会发现，同样也
+做了对应的支持。因为前者已经配置好shell变量了，后者只要直接用就可以了。
 
 ## placeholder
 
