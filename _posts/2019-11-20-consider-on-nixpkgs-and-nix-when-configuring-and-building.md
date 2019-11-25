@@ -44,3 +44,5 @@ setup-hook是分放在不同的两个章节且没有跳转或说明。
 
 现在在[discourse](https://discourse.nixos.org/t/what-is-the-difference-between-placeholder-out-and-out/4862)
 上提问中，等等回复吧。
+
+大概理解一下，主要就是提供了一种在shell外使用那个目录的方法。没有太大的区别。
