@@ -76,6 +76,10 @@ Makefile中就会出错。解决方法也简单，要么做为设置`ARFLAG_OUT`
 是只有AR的。当然也可以打个patch，不过用`preConfigure`更加通用吧。毕竟patch随软件
 更新可能会需要重新生成的。
 
+另外，nix-build或者nix-shell生成的环境变量，可以参考
+[direnv](https://github.com/direnv/direnv/blob/master/stdlib.sh#L734)的脚本进行导
+出，其实就是使用`--show-trace`参数罢了。
+
 ### `./configure`
 
 另外一点是`./configue`。上文提到了configure生成CFLAGS，但有时，还会对依赖进行检
@@ -101,3 +105,4 @@ configure生成的split CFLAGS错误而出了好久。这里又要分开说明�
 绕了一大圈（而且处理问题的初始方向完全错了，正确的应该是发现include子目录的问
 题。），但对nix又有了进一步了理解，问题也处理好了，最后nix的drv也写得比较好看了
 一点，可喜可贺。
+
