@@ -11,11 +11,11 @@ hook进行了一次理解。
 
 问题首先为成两个主要部分。
 1. cc-wrapper是何时被调用的，在cc-wrapper的setup-hook里没有调用到cc-wrapper，且
-   `stdenv/setup.sh`内也不存在setup-hook以外的特殊脚本调用。
+`stdenv/setup.sh`内也不存在setup-hook以外的特殊脚本调用。
 2. setup-hook内，以及各种build-support内，没有任何对`NIX_CFLAGS_COMPILE`进行
-    配置的地方，在nixpkgs也是同样（除了部分configure等有兼容性问题的地方）。那么
-    nix是如何使用这个变量，而又不去设置`CFLAGS`等变量的（其实有点剧透了，因为最
-    初的想法应该是何时把`NIX_CFLAGS_COMPILE`传过去的）。
+配置的地方，在nixpkgs也是同样（除了部分configure等有兼容性问题的地方）。那么
+nix是如何使用这个变量，而又不去设置`CFLAGS`等变量的（其实有点剧透了，因为最
+初的想法应该是何时把`NIX_CFLAGS_COMPILE`传过去的）。
 
 这两个问题其实是同样的，因为都是wrapper的内容。这两个问题之外，就是一些小细节了。
 
@@ -27,15 +27,15 @@ hook进行了一次理解。
 
 这类内置wrapper本质是一个drv，也就是一个软件，而所谓的cc-wrapper根本不是
 setup-hook，在nixpkgs文档内这部分写到了setup-hook内，但他setup-hook的是自动加入
-依赖进`NIX_CFLAGS_COMPILE`，而是给GCC等传入这个参数。当然传入参数这一过程也是由
+依赖进`NIX_CFLAGS_COMPILE`，而不是给GCC等传入这个参数。当然传入参数这一过程也是由
 这些wrapper实现的，但不是由setup-hook实现的。那么是哪里现实的呢？
 
 答案在cc-wrapper的drv里。在installPhase内，有一个wrap的shell函数调用，而这一调用
 就是把`cc-wrapper.sh`这一文件进行的替换。把gcc、clang等常用的一些编译器，用
-cc-wrapper替换掉了，而cc-wrapper干了什么？那么去看`cc-wrapper.sh`，其实就是把
-`NIX_CFLAGS_COMPILE`等`NIX_`的环境变量直接传入给wrap时打包的程序。比如，wrap了
-gcc，那么cc-wrapper最终就会执行`gcc $NIX_CFLAGS_COMPILE ...`这样的语句。当然，
-wrap不止做了这些，但这是我所关注的，此外做的还有一些参数的传递、hook的调用等。
+cc-wrapper替换掉了，而cc-wrapper干了什么？那么去看`cc-wrapper.sh`，其实就是把`
+NIX_CFLAGS_COMPILE`等`NIX_`的环境变量直接传入给wrap时打包的程序。比如，wrap了gcc，
+那么cc-wrapper最终就会执行`gcc $NIX_CFLAGS_COMPILE ...`这样的语句。当然，wrap不止
+做了这些，但这是我所关注的，此外做的还有一些参数的传递、hook的调用等。
 
 这样做除了可以传递CFLAGS外还有什么好处？在configure后一般会生成Makefile，或是有
 些Makefile内会需要你人为设置一些CFLAGS，而这些CFLAGS可能会因为各种原因被覆盖，比
