@@ -1,7 +1,7 @@
 ---
 title: 引用：haskell相关文章列表
 date: 2019-11-25 08:58:43 +0800
-categories: dev
+categories: develop
 tags: haskell
 ---
 

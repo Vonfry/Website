@@ -1,7 +1,7 @@
 ---
 title: 转：你是否有编写haskell的能力
 date: 2019-10-11 12:00:01 +0800
-categories: dev
+categories: develop
 tags: haskell
 ---
 
