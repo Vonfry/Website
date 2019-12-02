@@ -1,7 +1,7 @@
 ---
 title: nixpkgs configre与build相关思考
 date: 2019-11-20 14:12:57 +0800
-categories: dev
+categories: develop
 tags: nixos os nix
 ---
 
