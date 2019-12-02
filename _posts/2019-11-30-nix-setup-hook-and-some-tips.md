@@ -1,7 +1,7 @@
 ---
 title: nix setupHook和一些tips
 date: 2019-11-30 16:03:27 +0800
-categories: dev
+categories: develop
 tags: nix build hook
 ---
 
