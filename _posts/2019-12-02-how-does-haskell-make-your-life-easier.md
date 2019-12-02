@@ -1,5 +1,5 @@
 ---
-title: [转]haskell如何让你的生活更简单
+title: 转：haskell如何让你的生活更简单
 date: 2019-12-02 08:33:24 +0800
 categories: develop
 tags: haskell
