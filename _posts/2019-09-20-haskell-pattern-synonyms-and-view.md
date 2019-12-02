@@ -1,7 +1,7 @@
 ---
 title: haskell pettern synonyms and view
 date: 2019-09-20 20:05:59 +0800
-categories: dev
+categories: develop
 tags: haskell pattern
 ---
 

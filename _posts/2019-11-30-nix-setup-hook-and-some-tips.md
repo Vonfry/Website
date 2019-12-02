@@ -1,7 +1,7 @@
 ---
 title: nix setupHook和一些tips
 date: 2019-11-30 16:03:27 +0800
-categories: dev
+categories: develop
 tags: nix build hook
 ---
 
@@ -43,7 +43,7 @@ $(CC) $CFLAGS
 今天要写的主要是**环境变量**和`./configure`。
 
 ### 环境变量
-不同于大部分主流系统（如Ubuntu），这类系统是不默认导出CC、AR等变量的。而是由configure自动配置。而configure自动配置中，以autoconf生成的configure默认是会检查这些变量的存在，然后再进行赋值，而其实比较特殊的是AR。AR正常是需要一个操作参数的，但这一参数在部分configure中，会分给AR变量，比如`AR=${AR:-${ac_tool_prefix}arcr}"`，而这样一来，默认有AR变量但又没有传入参数（即`AR=ar`）的情况，在后续Makefile中就会出错。解决方法也简单，要么做为设置`ARFLAG_OUT`传入，要么在`preConfigure`中先`export AR="$AR cr"`就好了。至少，nix-build环境下的AR变量默认是只有AR的。当然也可以打个patch，不过用`preConfigure`更加通用吧。毕竟patch随软件更新可能会需要重新生成的。
+不同于大部分主流系统（如Ubuntu），这类系统是不默认导出CC、AR等变量的。而是由configure自动配置。而configure自动配置中，以autoconf生成的configure默认是会检查这些变量的存在，然后再进行赋值，而其实比较特殊的是AR。AR正常是需要一个操作参数的，但这一参数在部分configure中，会分给AR变量，比如`AR=${AR:-${ac_tool_prefix}ar cr}"`，而这样一来，默认有AR变量但又没有传入参数（即`AR=ar`）的情况，在后续Makefile中就会出错。解决方法也简单，要么做为设置`ARFLAG_OUT`传入，要么在`preConfigure`中先`export AR="$AR cr"`就好了。至少，nix-build环境下的AR变量默认是只有AR的。当然也可以打个patch，不过用`preConfigure`更加通用吧。毕竟patch随软件更新可能会需要重新生成的。
 
 另外，nix-build或者nix-shell生成的环境变量，可以参考[direnv](https://github.com/direnv/direnv/blob/master/stdlib.sh#L734)的脚本进行导出，其实就是使用`--show-trace`参数罢了。
 
@@ -51,7 +51,7 @@ $(CC) $CFLAGS
 
 另外一点是`./configue`。上文提到了configure生成CFLAGS，但有时，还会对依赖进行检查，但是nixpkgs因为已经处理了编译依赖了，没有传递CFLAGS，在configure中检查的CFLAGS自然也是空的。不过问题不大，因为检测依赖的方法多数是用CC进行编译一个很简单的测试文件来完成的。所以不会出问题。那么我为什么要写这个内容？因为我出问题啦！在我不知道cc wrapper的时候，我对CFLAGS传入的`NIX_CFLAGS_COMPILE`，结果因为configure生成的split CFLAGS错误而出了好久。这里又要分开说明了。
 
-为什么我要传入CFLAGS，因为qtbase的依赖没有被正确的加载，`qtbase/include`被自动加入了，但是有些人写代码，他就是不写二级目录。比如`#inuclude <QtCore/QQueue>`，有不会完成这个工作，因为没有尝试。），而一开始，我为了通过编译就直接加入CFLAGS了（因为当时还不懂`NIX_CFLAGS_COMPILE`的原理以及这个问题出现的本质，只为了通过检查就直接加CFLAGS，而正好CFLAGS又会被生成到Makefile.inc，做为编译参数的一部分被使用。所以看起来并没有出现问题）。而configure split中以空格为分格，是的以空格，而我传入的是`-isystem <path>`自然就不对了（常用的是`-I<path>`和`-L<path>`）。当然用哪个没太大区别，`-I`和`-L`分别是头文件和库文件目录。而`-isystem`是在系统头前，可以理解为系统头文件的一部分，而对于依赖我也更倾向于使用`-isystem`而不是`-I`和`-L`，后二者更倾向于自己添加的include和编译出来的lib，不属于安装到系统上的依赖。
+为什么我要传入CFLAGS，因为qtbase的依赖没有被正确的加载，`qtbase/include`被自动加入了，但是有些人写代码，他就是不写二级目录。比如`#inuclude <QtCore/QQueue>`，有人写成`#include <QQueue>`，需要人工去加入二级目录（我不太清楚`qtlib.callPackage`会不会完成这个工作，因为没有尝试。），而一开始，我为了通过编译就直接加入CFLAGS了（因为当时还不懂`NIX_CFLAGS_COMPILE`的原理以及这个问题出现的本质，只为了通过检查就直接加CFLAGS，而正好CFLAGS又会被生成到Makefile.inc，做为编译参数的一部分被使用。所以看起来并没有出现问题）。而configure split中以空格为分格，是的以空格，而我传入的是`-isystem <path>`自然就不对了（常用的是`-I<path>`和`-L<path>`）。当然用哪个没太大区别，`-I`和`-L`分别是头文件和库文件目录。而`-isystem`是在系统头前，可以理解为系统头文件的一部分，而对于依赖我也更倾向于使用`-isystem`而不是`-I`和`-L`，后二者更倾向于自己添加的include和编译出来的lib，不属于安装到系统上的依赖。
 
 我也正是因为上述这个问题，才去追查`NIX_CFLAGS_COMPILE`和`CFLAGS`到这一步的。虽然绕了一大圈（而且处理问题的初始方向完全错了，正确的应该是发现include子目录的问题。），但对nix又有了进一步了理解，问题也处理好了，最后nix的drv也写得比较好看了一点，可喜可贺。
 

@@ -1,7 +1,7 @@
 ---
 title: 类型类、逻辑与哲学
 date: 2019-10-01 14:13:20 +0800
-categories: dev
+categories: develop
 tags: haskell typeclass logic
 ---
 
