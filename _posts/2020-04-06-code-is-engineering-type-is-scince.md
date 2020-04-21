@@ -1,7 +1,7 @@
 ---
 title: REFS code is engineering, types are science
 date: 2020-04-06 14:58:44 +0800
-categories: dev philosophy
+categories: develop philosophy
 tags: haskell type
 ---
 
