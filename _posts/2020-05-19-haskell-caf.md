@@ -14,6 +14,7 @@ haskell中，会对特定的`form`进行缓存。从而产生出了一些使用�
 [The Fibonacci Sequence](https://wiki.haskell.org/The_Fibonacci_sequence)
 [let and where](https://wiki.haskell.org/Let_vs._Where#Problems_with_where)
 [eta conversion](https://wiki.haskell.org/Eta_conversion)
+[fix and recursion](https://en.wikibooks.org/wiki/Haskell/Fix_and_recursion)
 
 简单来说，就是符合caf的形式，在其执行时，会根本不同的情况对其值进行缓存。比如无穷列表的map会对列表进行缓存，这里主要是使用一个叫Float bindings outwards的东西，这是什么我也没查一，只知道ghc里面有一个FloatOut模块是用来做这个的。
 
