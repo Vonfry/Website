@@ -1,7 +1,0 @@
-{
-    "libs": [
-        "jquery",
-        "lunr",
-        "mathjax"
-    ]
-}
