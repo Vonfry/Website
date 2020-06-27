@@ -24,12 +24,23 @@ layout: page
 
 读研中……准备发展形式语言、数理逻辑证明等相关方向。
 
-信仰于`Haskell`语言。正在接触`Coq`与`Idris`。
+信仰于`Haskell`语言。正在接触`Coq`。
 
-主要使用`Ruby`以及`C`与`Rust`。学过相当一些语言，但比较喜欢的还是这几个呢。
+主要使用`Ruby`以及`C`与`Rust`。学过相当一些语言，但比较喜欢的还是这几个。
 
-平日使用`Vim`与`Emacs`写代码。
+平日使用`Vim`与`Emacs`写代码。Emacs为主力工具。同时使用`home-manager`作为配置管理工具。
 
 主要开发环境在macOS与NixOS上。~~主开发环境为`macOS`，其次为`Gentoo`，尝试`Nix`中。~~
 
 关于开发，更多请见[dotfiles](https://gitlab.com/Vonfry/dotfiles)和[awesome](https://gitlab.com/Vonfry/awesome)。
+
+## PGP Keys
+
+### Current
+[mail@vonfry.name](https://keys.openpgp.org/search?q=mail%40vonfry.name)
+
+### Expired
+
+[2019-09-09~2020-03-07 mail@vonfry.name](https://keys.openpgp.org/search?q=80763355C0BF6934)
+
+[2018-03-31~2019-03-31 vonfry314@gmail.com](https://keys.openpgp.org/search?q=7FC96CE000223B1C)
