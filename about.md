@@ -24,11 +24,11 @@ layout: page
 
 读研中……准备发展形式语言、数理逻辑证明等相关方向。
 
-信仰于`Haskell`语言。正在接触`Coq`。
+主要使用`Haskell`语言。正在接触`Coq`。
 
-主要使用`Ruby`以及`C`与`Rust`。学过相当一些语言，但比较喜欢的还是这几个。
+次要使用`Ruby`以及`C`与`Rust`。学过一些语言，但比较喜欢的是这几个。
 
-平日使用`Vim`与`Emacs`写代码。Emacs为主力工具。同时使用`home-manager`作为配置管理工具。
+平日使用`Vim`与`Emacs`写代码。`Emacs`为主力工具。同时使用`home-manager`作为配置管理工具。
 
 主要开发环境在macOS与NixOS上。~~主开发环境为`macOS`，其次为`Gentoo`，尝试`Nix`中。~~
 
