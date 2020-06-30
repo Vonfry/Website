@@ -1,13 +1,14 @@
-# This file is a template, and might need editing before it works on your project.
-# Template project: https://gitlab.com/pages/jekyll
-# Docs: https://docs.gitlab.com/ce/pages/
-image: ruby:2.4
+image: ruby:2.7
 
 variables:
   JEKYLL_ENV: production
 
+cache:
+  paths:
+  - vendor/
+
 before_script:
-- bundle install
+  - bundle install --path vendor
 
 test:
   stage: test
@@ -27,5 +28,5 @@ pages:
     paths:
     - public
   only:
-  - master
+  - tags
 
