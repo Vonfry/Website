@@ -3,6 +3,7 @@ title: 邮件标签与文件夹
 date: 2019-02-17 21:20:46 +0800
 categories: mail
 tags: tags folder
+published: false
 ---
 
 现代电子邮件有着很多功能，比如folder、tags等。但是folder是包含在imap协议里的，而tags则。 其中又以gmail最为特殊，完全使用tags，但gmail对tags针对imap进行了folder变换，所以使用上没什么影响。可是对于其它邮箱就不一样了，我们分类应该是用tags还是用folder呢？

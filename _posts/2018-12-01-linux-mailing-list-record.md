@@ -3,6 +3,7 @@ title: linux邮件列表的一点记录
 date: 2018-12-01 22:10:41 +0800
 categories: develop
 tags: kernel mail 
+published: false
 ---
 
 记录点事情吧。主要是今天发现突然收不到邮件列表的邮件了。大概查了下。[FAQ](http://vger.kernel.org/lkml/#s3-15)有几种可能会出现自动退订。以及今天重新订阅出的问题。
