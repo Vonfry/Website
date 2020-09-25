@@ -39,6 +39,8 @@ layout: page
 ### Current
 [mail@vonfry.name](https://keys.openpgp.org/search?q=mail%40vonfry.name)
 
+[2020-09-13~2022-09-13 mail@vonfry.name](https://keys.openpgp.org/search?q=EFE575DBE5AF69DC08A6B334EACFFD3C2B494F13)
+
 ### Expired
 
 [2019-01-31~2020-07-15 mail@vonfry.name](https://keys.openpgp.org/search?q=7CEA08AE02E6F76F)
