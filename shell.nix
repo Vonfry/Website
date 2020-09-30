@@ -2,5 +2,5 @@
 
 with pkgs;
 mkShell {
-  buildInputs = [ bundler ];
+  buildInputs = [ bundler rubyPackages.jekyll ];
 }
