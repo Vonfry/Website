@@ -26,9 +26,7 @@ layout: page
 
 主要使用`Haskell`语言，其次使用`Perl`为脚本语言。正在接触`Coq`。根据需求可能会选用`rust`、`elixir`、`ruby`、`C++`等语言进行开发。
 
-平日使用`Vim`与`Emacs`写代码。`Emacs`为主力工具。同时使用`nix`、`home-manager`作为配置管理工具。
-
-主要开发环境在macOS与NixOS上。~~主开发环境为`macOS`，其次为`Gentoo`，尝试`Nix`中。~~
+平日使用`Vim`与`Emacs`写代码。`Emacs`为主力工具。同时使用`nix`、`home-manager`作为配置管理工具。开发环境集中于NixOS。
 
 关于开发，更多请见[dotfiles](https://gitlab.com/Vonfry/dotfiles)和[awesome](https://gitlab.com/Vonfry/awesome)。
 
