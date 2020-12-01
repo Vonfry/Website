@@ -73,7 +73,7 @@ plugins:
 
 # Plugin: last modified
 last-modified-at:
-    date-format: "%B %-d, %Y"
+    date-format: "%B %d, %Y"
 
 paginate: 8
 paginate_path: /page:num/
@@ -98,4 +98,4 @@ footer_links:
     icon: fas fa-rss-square
 copyright: "This site is made with <3 by *me, myself, and I*."
 logo: static/images/default/logo.jpg
-date_format: "%B %-d, %Y"
+date_format: "%B %d, %Y"
