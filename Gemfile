@@ -22,4 +22,5 @@ group :jekyll_plugins do
     gem "jekyll-paginate"
     gem "jekyll-compose"
     gem "jekyll-sitemap"
+    gem "jekyll-last-modified-at"
 end
