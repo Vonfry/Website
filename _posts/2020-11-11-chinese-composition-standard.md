@@ -10,7 +10,8 @@ categories: default
 
 ## REF
 
-[w3c提出的标准](https://w3c.github.io/clreq/)
+- [w3c提出的标准](https://w3c.github.io/clreq/)
+- [别人的设计规范](https://github.com/sparanoid/chinese-copywriting-guidelines)
 
 ## 简述
 

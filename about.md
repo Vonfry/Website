@@ -24,11 +24,11 @@ layout: page
 
 读研中……准备发展形式语言、数理逻辑证明等相关方向。
 
-主要使用`Haskell`语言，其次使用`Perl`为脚本语言。正在接触`Coq`。根据需求可能会选用`rust`、`elixir`、`ruby`、`C++`等语言进行开发。
+主要使用 `Haskell` 语言，其次使用 `Perl` 为脚本语言。正在接触 `Coq`。根据需求可能会选用 `rust`、`elixir`、`ruby`、`C++` 等语言进行开发。
 
-平日使用`Vim`与`Emacs`写代码。`Emacs`为主力工具。同时使用`nix`、`home-manager`作为配置管理工具。开发环境集中于NixOS。
+平日使用 `Vim` 与 `Emacs` 写代码。`Emacs` 为主力工具。同时使用 `nix`、`home-manager` 作为配置管理工具。开发环境集中于 NixOS。
 
-关于开发，更多请见[dotfiles](https://gitlab.com/Vonfry/dotfiles)和[awesome](https://gitlab.com/Vonfry/awesome)。
+关于开发，更多请见 [dotfiles](https://gitlab.com/Vonfry/dotfiles) 和 [awesome](https://gitlab.com/Vonfry/awesome)。
 
 ## PGP Keys
 
