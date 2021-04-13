@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  haskell: fix point
+title:  "haskell: fix point"
 date:   2021-04-13 16:24:27 +0800
-categories: dev
+categories: develop
 tags: haskell fix_point lambda_calcus
 ---
 
