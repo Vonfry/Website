@@ -2,7 +2,7 @@ title: 乐水榭 | 论极语易-Vonfry 博客
 description: >
   Just for fun.<br/>
   不会记录非常复杂的东西（那种东西在脑子里，也懒得写成博客）。<br/>
-  主要用于记录开发中的小问题和一些理解。
+  主要用于记录开发中的小问题和一些理解。部分收集内容可见 <a href="https://gitlab.com/Vonfry/awesome">awesome</a>
 baseurl: ""
 url: "https://vonfry.name"
 excerpt_separator: "<!-- more -->"
