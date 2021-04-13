@@ -19,7 +19,7 @@ tags: lang syntax
 **但**本文想要讨论的是**语法**、**社区风格**和**一些特性的实现方式**，而不是所有的语言特性。我将要讨论的内容主要是程序的表达/表述方式在编写过程中的**快感、便利性**等，这不在上述内容中。
 
 ## 表达/语法
-对编程语言的语法，除了解析外，另外一点就是阅读与书写。也就是其表达能力。
+对编程语言的语法，除了解析外，另外一点就是阅读与书写。也就是其表达能力。我们在这里说的不是单纯表面的语法规则。语法规则大家都是比较相近的，讨论这些没有意义。重点是语法之下带来阅读与书写的体验。同时语法带来的一定程度思维的导向。
 
 不同语言都有相类似的控制结构、类型结构、函数定义等方式，他们在本质上是相类似的。不同的语言使用不同的实现方式带来了不同的特性，比如haskell的惰性计算带来了函数便利的composition，lisp的list式的语法拥有非常强大的macro等。ruby和perl使用大量了语法糖简化了相同目的代码编写，并且提供了不同的编码风格。python用较为简单（单一）的语法来减少程序员（编写过程时）思考的负担。这些设计提供了不同的编码风格与哲学，如[There's more than one way to do it](https://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it)，[There should be one—and preferably only one—obvious way to do it](https://en.wikipedia.org/wiki/Zen_of_Python)，metaprogram等。
 
