@@ -2,7 +2,7 @@
 layout: post
 title:  临时文件目录空间导致的编译失败
 date:   2021-05-18 18:09:38 +0800
-category: dev
+category: develop
 tags: tensorflow build tmpfs shm
 ---
 
