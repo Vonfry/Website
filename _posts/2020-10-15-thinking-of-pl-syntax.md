@@ -2,7 +2,7 @@
 layout: post
 title:  编程语言语法的思考
 date:   2020-10-15 15:25:51 +0800
-categories: dev
+categories: develop
 tags: lang syntax
 ---
 

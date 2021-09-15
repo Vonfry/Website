@@ -2,8 +2,8 @@
 layout: post
 title:  efi、systemd-boot与grub及双系统问题
 date:   2020-09-30 23:16:21 +0800
-tag:    os dev linux nixos windows
-categories: dev
+tag:    os linux nixos windows
+categories: develop
 ---
 
 最近在工作站上装nixos遇到了引导问题。大概为我配置了grub，但是开机却不能引导，行为是直接启动了windows，简直就像是uefi没有查找到linux的efi一样（事实也是的）。
