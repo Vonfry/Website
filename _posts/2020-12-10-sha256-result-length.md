@@ -2,7 +2,7 @@
 layout: post
 title:  sha256 等 hash 算法结果长度
 date:   2020-12-10 15:56:43 +0800
-catgeries: dev
+catgeries: develop
 tags: hash sha256
 ---
 
