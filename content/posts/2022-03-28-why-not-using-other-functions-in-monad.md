@@ -1,11 +1,12 @@
 ---
-categories: 
+layout: post
+title:  "为什么 haskell 的 monad 定义使用 a -> m b 作为输入"
+date:   2022-03-28 11:41:32 +0800
+categories:
 - develop
-date: "2022-03-28T11:41:32Z"
-tags: 
+tags:
 - haskell
 - monad
-title: 为什么 haskell 的 monad 定义使用 a -> m b 作为输入
 ---
 ## 问题说明
 在理解 monad 时想到的部分，为什么 haskell 定义 monad 时要使用 `a -> m b` 作为输入函数？
