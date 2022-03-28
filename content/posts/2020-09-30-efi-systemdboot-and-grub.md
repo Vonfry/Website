@@ -2,7 +2,7 @@
 categories: 
 - develop
 date: "2020-09-30T23:16:21Z"
-tag: 
+tags: 
 - os
 - linux
 - nixos

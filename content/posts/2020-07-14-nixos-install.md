@@ -2,7 +2,7 @@
 categories: 
 - develop
 date: "2020-07-14T09:47:08Z"
-tag: 
+tags: 
 - nixos
 - os
 title: nixos install
