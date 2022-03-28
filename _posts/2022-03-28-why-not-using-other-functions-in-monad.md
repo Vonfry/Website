@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "为什么 haskell 的 monad 定义使用 a -> m b 作为输入"
-date:   2021-04-13 16:24:27 +0800
+date:   2022-03-28 11:41:32 +0800
 categories: develop
 tags: haskell monad
 ---
