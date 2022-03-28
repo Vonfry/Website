@@ -1,13 +1,7 @@
-* Static
+* Website
 
-This dir is different with assets.
-Saving theme's and pages' assets  in assets dir. And this dir saves files for blogging post.
+Site: https://vonfry.name
 
-** Dir
+The project url: https://gitlab.com/Vonfry/website
 
-- images  :: pictures
-- urls    :: url links
-- org     :: org files
-- sources :: tex or dot files
-
-All files in these dir should be under a dir named by the post's date.
+Github repo just a mirror.

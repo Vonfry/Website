@@ -1,7 +1,0 @@
-* Website
-
-Site: https://vonfry.name
-
-The project url: https://gitlab.com/Vonfry/website
-
-Github repo just a mirror.
