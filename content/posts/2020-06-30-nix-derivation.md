@@ -1,7 +1,9 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2020-06-30T18:34:33Z"
-tags: nix
+tags: 
+- nix
 title: nix derivation
 ---
 

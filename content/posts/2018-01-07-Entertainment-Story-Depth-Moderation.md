@@ -1,7 +1,13 @@
 ---
-categories: script
+categories: 
+- script
 date: "2018-01-07T13:33:01Z"
-tags: story depth moderation entertainment stand-alone-complex
+tags: 
+- story
+- depth
+- moderation
+- entertainment
+- stand-alone-complex
 title: 娱乐，故事，深度，中庸
 ---
 

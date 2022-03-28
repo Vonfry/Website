@@ -2,7 +2,11 @@
 categories:
 - develop
 date: "2021-05-18T18:09:38Z"
-tags: tensorflow build tmpfs shm
+tags: 
+- tensorflow
+- build
+- tmpfs
+- shm
 title: 临时文件目录空间导致的编译失败
 ---
 

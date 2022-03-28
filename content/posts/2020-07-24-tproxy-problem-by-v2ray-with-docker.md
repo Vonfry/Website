@@ -1,7 +1,12 @@
 ---
-categories: os
+categories: 
+- os
 date: "2020-07-24T20:22:34Z"
-tags: docker tproxy dns linux
+tags: 
+- docker
+- tproxy
+- dns
+- linux
 title: 建立v2ray透明代理时遇到的问题记录
 ---
 

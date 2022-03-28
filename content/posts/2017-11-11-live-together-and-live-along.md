@@ -1,5 +1,6 @@
 ---
-categories: life
+categories: 
+- life
 date: "2017-11-11T09:36:50Z"
 title: 群居与独居
 ---

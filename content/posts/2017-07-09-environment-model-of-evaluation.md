@@ -1,7 +1,13 @@
 ---
-categories: develop
+categories:
+- develop
 date: "2017-07-09T15:43:01Z"
-tags: sicp lisp haskell python javascript
+tags:
+- sicp
+- lisp
+- haskell
+- python
+- javascript
 title: 求值环境模型
 ---
 # 记录为主

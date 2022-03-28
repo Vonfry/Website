@@ -1,7 +1,9 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2019-10-11T12:00:01Z"
-tags: haskell
+tags: 
+- haskell
 title: 转：你是否有编写haskell的能力
 ---
 

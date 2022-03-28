@@ -1,7 +1,12 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2017-08-16T08:19:27Z"
-tags: pkg haskell cabal stack
+tags: 
+- pkg
+- haskell
+- cabal
+- stack
 title: haskell包管理处理
 ---
 

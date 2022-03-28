@@ -1,7 +1,12 @@
 ---
-categories: os
+categories: 
+- os
 date: "2017-09-03T15:43:07Z"
-tags: linux gentoo portage server
+tags: 
+- linux
+- gentoo
+- portage
+- server
 title: gentoo USE 注意点
 ---
 

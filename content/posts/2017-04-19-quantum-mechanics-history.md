@@ -1,7 +1,10 @@
 ---
-categories: physics extract
+categories: 
+- physics
+- extract
 date: "2017-04-19T09:28:00Z"
-tags: quantum-mechanics
+tags:
+- quantum-mechanics
 title: 《上帝掷骰子》-量子力学史话 笔记
 ---
 

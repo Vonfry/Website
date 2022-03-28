@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2020-06-20T13:53:33Z"
-tags: debug boot
+tags: 
+- debug
+- boot
 title: 调试器与软件启动过程
 ---
 

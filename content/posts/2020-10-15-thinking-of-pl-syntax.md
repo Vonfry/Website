@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2020-10-15T15:25:51Z"
-tags: lang syntax
+tags: 
+- lang
+- syntax
 title: 编程语言语法的思考
 ---
 

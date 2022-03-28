@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2020-04-21T22:12:22Z"
-tags: haskell fold
+tags: 
+- haskell
+- fold
 title: foldl,foldr,foldl'
 ---
 

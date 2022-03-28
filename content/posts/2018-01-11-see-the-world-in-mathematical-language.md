@@ -1,7 +1,10 @@
 ---
-categories: mathematical extract
+categories: 
+- mathematical
+- extract
 date: "2018-01-11T18:32:41Z"
-tags: live
+tags: 
+- live
 title: 用数学眼光看世界 笔记
 ---
 

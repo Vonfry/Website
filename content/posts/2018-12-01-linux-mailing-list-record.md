@@ -1,8 +1,11 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2018-12-01T22:10:41Z"
 published: false
-tags: kernel mail
+tags: 
+- kernel
+- mail
 title: linux邮件列表的一点记录
 ---
 

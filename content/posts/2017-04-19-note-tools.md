@@ -1,7 +1,9 @@
 ---
-categories: tool
+categories:
+- tool
 date: "2017-04-19T11:52:13Z"
-tags: note
+tags:
+- note
 title: 笔记使用工具
 ---
 

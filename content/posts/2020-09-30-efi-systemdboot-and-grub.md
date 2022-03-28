@@ -1,7 +1,12 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2020-09-30T23:16:21Z"
-tag: os linux nixos windows
+tag: 
+- os
+- linux
+- nixos
+- windows
 title: efi、systemd-boot与grub及双系统问题
 ---
 

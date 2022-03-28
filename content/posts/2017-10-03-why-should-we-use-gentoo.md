@@ -1,7 +1,11 @@
 ---
-catgeories: os
+catgeories: 
+- os
 date: "2017-10-03T00:00:00Z"
-tags: gentoo linux server
+tags: 
+- gentoo
+- linux
+- server
 title: 使用Gentoo的数个理由及注意点
 ---
 

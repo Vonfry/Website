@@ -1,7 +1,9 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2020-05-19T14:54:36Z"
-tags: haskell
+tags: 
+- haskell
 title: haskell caf
 ---
 

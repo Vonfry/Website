@@ -1,7 +1,9 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2018-05-22T16:57:17Z"
-tags: lambda
+tags: 
+- lambda
 title: lambd演算
 ---
 

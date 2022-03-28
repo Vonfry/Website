@@ -1,7 +1,12 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2018-04-23T18:42:56Z"
-tags: haskell ruby stackoverflow recursion
+tags: 
+- haskell
+- ruby
+- stackoverflow
+- recursion
 title: 递归中的栈溢出
 ---
 <!--more-->

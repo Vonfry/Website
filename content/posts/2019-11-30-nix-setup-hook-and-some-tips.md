@@ -1,7 +1,11 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2019-11-30T16:03:27Z"
-tags: nix build hook
+tags: 
+- nix
+- build
+- hook
 title: nix setupHook和一些tips
 ---
 

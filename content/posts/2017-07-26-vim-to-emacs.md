@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories:
+- develop
 date: "2017-07-26T10:23:17Z"
-tags: vim emacs
+tags:
+- vim
+- emacs
 title: 从vim转至emacs的理由
 ---
 

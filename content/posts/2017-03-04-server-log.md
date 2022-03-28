@@ -1,7 +1,13 @@
 ---
-categories: os
+categories:
+- os
 date: "2017-03-04T21:34:00Z"
-tags: fedora piwik goaccess nginx server
+tags:
+- fedora
+- piwik
+- goaccess
+- nginx
+- server
 title: Web服务器日志分析工具
 ---
 

@@ -1,7 +1,12 @@
 ---
-categories: os
+categories: 
+- os
 date: "2017-05-06T19:57:49Z"
-tags: docker mysql datebase server
+tags:
+- docker
+- mysql
+- datebase
+- server
 title: 连接本地docker内的mysql
 ---
 

@@ -1,7 +1,9 @@
 ---
-categories: os
+categories: 
+- os
 date: "2018-04-04T16:07:14Z"
-tags: nixos
+tags: 
+- nixos
 title: nixos试用
 ---
 

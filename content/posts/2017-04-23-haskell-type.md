@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories:
+- develop
 date: "2017-04-23T13:06:18Z"
-tags: haskell type-annotation
+tags: 
+- haskell
+- type-annotation
 title: Haskell类型限制
 ---
 

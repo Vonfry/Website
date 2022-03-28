@@ -1,7 +1,11 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2019-10-01T14:13:20Z"
-tags: haskell typeclass logic
+tags: 
+- haskell
+- typeclass
+- logic
 title: 类型类、逻辑与哲学
 ---
 

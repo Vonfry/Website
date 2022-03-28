@@ -1,7 +1,9 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2018-01-30T21:50:34Z"
-tags: git
+tags: 
+- git
 title: git文件大小写问题
 ---
 <!--more-->

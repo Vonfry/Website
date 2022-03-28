@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2022-03-28T11:41:32Z"
-tags: haskell monad
+tags: 
+- haskell
+- monad
 title: 为什么 haskell 的 monad 定义使用 a -> m b 作为输入
 ---
 ## 问题说明

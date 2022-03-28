@@ -1,7 +1,11 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2017-11-05T12:49:38Z"
-tags: emacs intero irony
+tags: 
+- emacs
+- intero
+- irony
 title: 开发工具相关插error记录
 ---
 

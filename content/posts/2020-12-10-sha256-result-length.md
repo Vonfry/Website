@@ -1,7 +1,10 @@
 ---
-catgeries: develop
+catgeries: 
+- develop
 date: "2020-12-10T15:56:43Z"
-tags: hash sha256
+tags: 
+- hash
+- sha256
 title: sha256 等 hash 算法结果长度
 ---
 

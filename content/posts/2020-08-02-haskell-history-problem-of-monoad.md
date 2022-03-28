@@ -1,7 +1,12 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2020-08-02T12:16:45Z"
-tags: haskell, code, monoad, traversable
+tags: 
+- haskell 
+- code 
+- monoad 
+- traversable
 title: haskell中fmap, liftM, mapM, traverse历史问题记录
 ---
 

@@ -1,7 +1,9 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2019-11-25T08:58:43Z"
-tags: haskell
+tags: 
+- haskell
 title: 引用：haskell相关文章列表
 ---
 

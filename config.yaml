@@ -49,9 +49,15 @@ params:
 
 menu:
   main:
-  - name: "Blog"
+  - name: "Posts"
     weight: 1
     url: "posts/"
-  - name: "About"
+  - name: "Categories"
     weight: 2
+    url: "categories/"
+  - name: "Tags"
+    weight: 2
+    url: "tags/"
+  - name: "About"
+    weight: 3
     url: "about/"

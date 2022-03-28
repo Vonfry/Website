@@ -1,7 +1,9 @@
 ---
-categories: os
+categories: 
+- os
 date: "2018-03-11T13:36:25Z"
-tags: gentoo
+tags: 
+- gentoo
 title: gentoo配置makeopt
 ---
 

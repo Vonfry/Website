@@ -1,7 +1,9 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2019-05-17T08:32:01Z"
-tags: C
+tags: 
+- C
 title: 毕设遇到C语言相关记录
 ---
 

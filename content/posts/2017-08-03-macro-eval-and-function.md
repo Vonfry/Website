@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2017-08-03T22:51:21Z"
-tags: emacs lisp
+tags: 
+- emacs
+- lisp
 title: 宏，eval，函数
 ---
 

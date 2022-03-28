@@ -1,7 +1,10 @@
 ---
-categories: default
+categories: 
+- default
 date: "2020-11-11T18:24:00Z"
-tags: chinese composition
+tags: 
+- chinese
+- composition
 title: 中文排版标准
 ---
 

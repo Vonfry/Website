@@ -1,7 +1,9 @@
 ---
-categories: life
+categories: 
+- life
 date: "2018-03-11T13:32:12Z"
-tags: education
+tags: 
+- education
 title: 学习与教育，思考其一
 ---
 

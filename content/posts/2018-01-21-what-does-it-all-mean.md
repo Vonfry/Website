@@ -1,7 +1,10 @@
 ---
-categories: philosophy extract
+categories: 
+- philosophy
+- extract
 date: "2018-01-21T18:30:36Z"
-tags: question
+tags: 
+- question
 title: 你的第一本哲学书
 ---
 

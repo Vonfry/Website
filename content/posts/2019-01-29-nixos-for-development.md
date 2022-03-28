@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2019-01-29T12:14:27Z"
-tags: nix nixos
+tags: 
+- nix
+- nixos
 title: nixos使用与开发配置
 ---
 

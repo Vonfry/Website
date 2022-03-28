@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2018-09-24T18:23:30Z"
-tags: ipv6 linux
+tags: 
+- ipv6
+- linux
 title: ipv6配置记录
 ---
 

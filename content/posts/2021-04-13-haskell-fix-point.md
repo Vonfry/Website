@@ -1,7 +1,11 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2021-04-13T16:24:27Z"
-tags: haskell fix_point lambda_calcus
+tags: 
+- haskell
+- fix_point
+- lambda_calcus
 title: 'haskell: fix point'
 ---
 

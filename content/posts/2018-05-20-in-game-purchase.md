@@ -1,7 +1,9 @@
 ---
-categories: game
+categories: 
+- game
 date: "2018-05-20T17:58:13Z"
-tags: purchase
+tags: 
+- purchase
 title: 抽卡游戏内购思考
 ---
 

@@ -1,7 +1,12 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2017-08-03T00:46:30Z"
-tags: emacs spacemacs configure vim
+tags: 
+- emacs
+- spacemacs
+- configure
+- vim
 title: emacs自配置或使用spacemacs
 ---
 

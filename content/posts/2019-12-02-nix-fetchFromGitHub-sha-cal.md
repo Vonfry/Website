@@ -1,7 +1,9 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2019-12-02T18:38:56Z"
-tags: nix
+tags: 
+- nix
 title: nix计算目录sha值访方法
 ---
 

@@ -1,7 +1,9 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2021-09-15T14:58:28Z"
-tags: haskell
+tags: 
+- haskell
 title: CPS and monad and function
 ---
 ## 起因

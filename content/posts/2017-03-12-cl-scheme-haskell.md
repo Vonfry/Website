@@ -1,7 +1,11 @@
 ---
-categories: develop
+categories:
+- develop
 date: "2017-03-12T16:03:00Z"
-tags: common-lisp scheme haskell
+tags:
+- common-lisp 
+- scheme 
+- haskell
 title: CL与Scheme与Haskell
 ---
 

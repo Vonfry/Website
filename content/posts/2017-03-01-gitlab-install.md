@@ -1,7 +1,11 @@
 ---
-categories: os
+categories: 
+  - os
 date: "2017-03-01T11:54:00Z"
-tags: GitLab Fedora server
+tags:
+  - GitLab
+  - Fedora
+  - server
 title: gitlab安装问题记录
 ---
 

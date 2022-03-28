@@ -1,7 +1,10 @@
 ---
-categories: philosophy
+categories: 
+- philosophy
 date: "2019-10-16T16:40:04Z"
-tags: logic object
+tags: 
+- logic
+- object
 title: 对逻辑与物质的思考
 ---
 

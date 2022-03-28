@@ -1,7 +1,12 @@
 ---
-categories: os
+categories: 
+- os
 date: "2017-08-31T16:52:39Z"
-tags: linux ssh gentoo server
+tags: 
+- linux
+- ssh
+- gentoo
+- server
 title: 通过ssh连接虚拟机
 ---
 <!--more-->

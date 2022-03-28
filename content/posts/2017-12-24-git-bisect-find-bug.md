@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2017-12-24T19:32:21Z"
-tags: git bug
+tags: 
+- git
+- bug
 title: 使用git查找bug
 ---
 <!--more-->

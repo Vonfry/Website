@@ -1,7 +1,11 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2018-04-29T15:28:21Z"
-tags: zsh shell startup
+tags: 
+- zsh
+- shell
+- startup
 title: zsh启动时间优化
 ---
 

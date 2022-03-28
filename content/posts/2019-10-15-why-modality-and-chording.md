@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2019-10-15T11:12:10Z"
-tags: vim editor
+tags: 
+- vim
+- editor
 title: Why modality and chording
 ---
 

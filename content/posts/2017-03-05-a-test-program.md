@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories:
+- develop
 date: "2017-03-05T12:48:00Z"
-tags: test python3
+tags:
+- test
+- python3
 title: 记一次作业程序
 ---
 

@@ -1,7 +1,10 @@
 ---
-categories: game
+categories: 
+- game
 date: "2019-03-13T12:19:36Z"
-tags: minori gal
+tags: 
+- minori
+- gal
 title: minori解散感触
 ---
 

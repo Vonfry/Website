@@ -1,7 +1,9 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2019-12-02T08:33:24Z"
-tags: haskell
+tags: 
+- haskell
 title: 转：haskell如何让你的生活更简单
 ---
 

@@ -1,5 +1,6 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2017-10-15T16:44:11Z"
 title: 浮点误差
 ---

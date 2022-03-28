@@ -1,8 +1,11 @@
 ---
-categories: mail
+categories: 
+- mail
 date: "2019-02-17T21:20:46Z"
 published: false
-tags: tags folder
+tags: 
+- tags
+- folder
 title: 邮件标签与文件夹
 ---
 

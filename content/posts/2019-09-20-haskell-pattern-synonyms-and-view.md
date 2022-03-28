@@ -1,7 +1,10 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2019-09-20T20:05:59Z"
-tags: haskell pattern
+tags: 
+- haskell
+- pattern
 title: haskell pettern synonyms and view
 ---
 

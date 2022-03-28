@@ -1,7 +1,10 @@
 ---
-categories: mathematical extract
+categories: 
+- mathematical
+- extract
 date: "2018-01-11T18:35:03Z"
-tags: solve
+tags: 
+- solve
 title: 如何解题 笔记
 ---
 

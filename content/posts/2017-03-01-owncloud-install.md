@@ -1,7 +1,11 @@
 ---
-categories: os
+categories:
+- os
 date: "2017-03-01T16:54:00Z"
-tags: owncloud fedora server
+tags:
+- owncloud
+- fedora
+- server
 title: owncloud安装问题记录
 ---
 

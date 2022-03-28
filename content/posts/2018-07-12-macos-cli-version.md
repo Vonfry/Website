@@ -1,7 +1,9 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2018-07-12T09:30:52Z"
-tags: macos
+tags: 
+- macos
 title: macos commandline version
 ---
 

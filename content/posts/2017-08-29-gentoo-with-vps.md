@@ -1,7 +1,11 @@
 ---
-categories: os
+categories: 
+- os
 date: "2017-08-29T14:17:23Z"
-tags: gentoo linux server
+tags: 
+- gentoo
+- linux
+- server
 title: 在vps中安装gentoo
 ---
 

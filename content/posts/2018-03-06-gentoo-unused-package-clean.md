@@ -1,7 +1,10 @@
 ---
-categories: os
+categories: 
+- os
 date: "2018-03-06T22:36:01Z"
-tags: gentoo clean
+tags: 
+- gentoo
+- clean
 title: Gentoo清理不需要的包
 ---
 

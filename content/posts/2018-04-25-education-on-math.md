@@ -1,7 +1,9 @@
 ---
-categories: mathematical
+categories: 
+- mathematical
 date: "2018-04-25T19:29:21Z"
-tags: education
+tags: 
+- education
 title: 数学教育
 ---
 

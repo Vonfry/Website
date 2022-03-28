@@ -1,7 +1,11 @@
 ---
-categories: develop
+categories:
+- develop
 date: "2017-04-19T16:00:23Z"
-tags: functional haskell common-lisp
+tags:
+- functional
+- haskell
+- common-lisp
 title: 函数式编程语言之多语句思考
 ---
 <!--more-->

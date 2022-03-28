@@ -1,7 +1,9 @@
 ---
-categories: algorithms
+categories: 
+- algorithms
 date: "2017-10-25T12:56:08Z"
-tags: structure
+tags: 
+- structure
 title: 用乘法实现除法
 ---
 

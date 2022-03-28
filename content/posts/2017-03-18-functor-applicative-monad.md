@@ -1,7 +1,12 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2017-03-18T12:38:47Z"
-tags: haskell functor applicative monad
+tags:
+- haskell
+- functor
+- applicative
+- monad
 title: 函子，应用函子，单子
 ---
 

@@ -1,7 +1,13 @@
 ---
-categories: develop
+categories: 
+- develop
 date: "2017-11-07T12:38:47Z"
-tags: os ide editor emacs command-line
+tags: 
+- os
+- ide
+- editor
+- emacs
+- command-line
 title: 操作系统与IDE或编辑器
 ---
 
