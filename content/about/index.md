@@ -27,7 +27,7 @@
 
 平日使用 `Vim` 与 `Emacs` 写代码。`Emacs` 为主力工具。同时使用 `nix`、`home-manager` 作为配置管理工具。开发环境集中于 NixOS。
 
-关于开发，更多请见 [dotfiles](https://gitlab.com/Vonfry/dotfiles) 和 [awesome](https://gitlab.com/Vonfry/awesome)。
+关于开发，更多请见 [dotfiles](https://git.sr.ht/~vonfry/dotfiles) 和 [awesome](https://git.sr.ht/~vonfry/awesome)。
 
 ## PGP Keys
 
