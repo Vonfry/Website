@@ -1,7 +1,7 @@
 +++ 
 date = 2022-10-23T13:30:28+08:00
 title = "物理场仿真相关算法记录"
-tags = [ 'algorithms', 'physics_field' ]
+tags = [ 'algorithms', 'physics_field', 'libraries' ]
 categories = [ 'develop' ]
 +++
 
@@ -27,3 +27,23 @@ categories = [ 'develop' ]
 - BEM （边界元）
 - FDID （时域有限积分）
 - 拓扑优化
+
+
+## 一些开发库
+
+### 建模
+- OpenCASCADE
+- C3D
+
+### 几何
+- CGAL
+
+### 矩阵计算
+- Eigen
+- intel MKL
+- Spectra
+- arpack-ng
+- FEAST
+
+### 数据结构
+- xtensor
