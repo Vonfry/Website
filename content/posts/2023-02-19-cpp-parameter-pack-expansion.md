@@ -1,7 +1,7 @@
 +++ 
 date = 2023-02-19T10:38:46+08:00
 title = "C++ 模板参数逐个处理"
-tags = [ "cpp" "lang" ]
+tags = [ "cpp", "lang" ]
 categories = [ "develop" ]
 +++
 
