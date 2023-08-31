@@ -36,6 +36,8 @@
 
 [2022-11-26~2023-11-26 mail@vonfry.name](https://keys.openpgp.org/search?q=E9A68F77F499454FD0AE814FE47DA4B266B726FA)
 
+[2023-08-30~2024-08-30 moooffice@vonfry.name](https://keys.openpgp.org/search?q=E1BF05A1297B6E5D2487CB48F9D4E1576A3F8A60)
+
 ### Expired
 
 [2020-09-13~2022-09-13 mail@vonfry.name](https://keys.openpgp.org/search?q=EFE575DBE5AF69DC08A6B334EACFFD3C2B494F13)
