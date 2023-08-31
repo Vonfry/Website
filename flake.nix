@@ -6,7 +6,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in {
       devShell.${system} = with pkgs; mkShell {
-        buildInputs = [ hugo ];
+        buildInputs = [ hugo hut ];
       };
     };
 }
