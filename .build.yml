@@ -1,0 +1,17 @@
+image: alpine/latest
+oauth: pages.sr.ht/PAGES:RW
+packages:
+  - hut
+  - hugo
+environment:
+  site: vonfry.name
+tasks:
+  - test: |
+      cd website
+      hugo
+  - pages: |
+      [[ ! ${GIT_REF} =~ ^refs/tags/.*$ ]] && exit
+      cd website
+      tar -C public -cvz . > ../site.tar.gz
+      echo "Pages generated on ${GIT_REF}"
+      hut pages publish -d $site ../site.tar.gz
