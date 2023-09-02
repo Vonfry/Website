@@ -10,8 +10,7 @@ tasks:
       cd website
       hugo
   - pages: |
-      [[ ! ${GIT_REF} =~ ^refs/tags/.*$ ]] && exit
+      [[ ! ${GIT_REF} =~ ^refs/tags/.*$ ]] && complete-build
       cd website
       tar -C public -cvz . > ../site.tar.gz
-      echo "Pages generated on ${GIT_REF}"
       hut pages publish -d $site ../site.tar.gz
