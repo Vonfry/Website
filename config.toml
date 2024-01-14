@@ -1,0 +1,71 @@
+baseURL = "https://vonfry.name"
+disablePathToLower = true
+languageCode = "en-us"
+title = "乐水榭 | 论极语易-Vonfry 博客"
+theme = "hugo-coder"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+[markup.highlight]
+sytle = "dracula"
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+
+[params]
+author = "Vonfry | 论极语易"
+info = "Code for Fun."
+description = "乐水榭 | Vonfry's personal website"
+keywords = "blog,developer,personal"
+avatarurl = "/images/default/logo-white.png"
+gravatar = "mail@vonfry.name"
+
+since = 2015
+
+favicon32 = "/images/default/logo-white.png"
+favicon16 = "/images/default/logo-white.png"
+
+enableTwemoji = true
+hidecolorschemetoggle = true
+colorScheme = "dark"
+
+[[params.social]]
+name = "Repos"
+icon = "fa fa-code-fork fa-2x"
+weight = 1
+url = "https://git.sr.ht/~vonfry"
+[[params.social]]
+name = "Github"
+icon = "fa fa-github fa-2x"
+weight = 1
+url = "https://github.com/Vonfry/"
+[[params.social]]
+name = "Gitlab"
+icon = "fa fa-gitlab fa-2x"
+weight = 2
+url = "https://gitlab.com/Vonfry/"
+[[params.social]]
+name = "Twitter"
+icon = "fa fa-twitter fa-2x"
+weight = 3
+url = "https://twitter.com/Vonfry314/"
+
+[[menu.main]]
+name = "Posts"
+weight = 1
+url = "posts/"
+[[menu.main]]
+name = "Categories"
+weight = 2
+url = "categories/"
+[[menu.main]]
+name = "Tags"
+weight = 2
+url = "tags/"
+[[menu.main]]
+name = "About"
+weight = 3
+url = "about/"
