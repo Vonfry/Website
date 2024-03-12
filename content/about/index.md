@@ -29,6 +29,11 @@
 
 关于开发，更多请见 [dotfiles](https://git.sr.ht/~vonfry/dotfiles) 和 [awesome](https://git.sr.ht/~vonfry/awesome)。
 
+## Contact / 联系
+
+- [mail@vonfry.name](mailto:mail@vonfry.name), or you can replace mail with any validated local-part.
+- [matrix: @vonfry:vonfry.name](https://matrix.to/#/@vonfry:vonfry.name).
+
 ## PGP Keys
 
 ### Current
