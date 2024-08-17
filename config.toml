@@ -68,3 +68,7 @@ url = "tags/"
 name = "About"
 weight = 3
 url = "about/"
+[[menu.main]]
+name = "Feed"
+weight = 3
+url = "index.xml"
