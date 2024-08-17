@@ -32,24 +32,31 @@ hidecolorschemetoggle = true
 colorScheme = "dark"
 
 [[params.social]]
+name = "Feed"
+icon = "fa-solid fa-rss fa-2x"
+weight = 1
+rel = "alternate"
+type = "application/rss+xml"
+url = "index.xml"
+[[params.social]]
 name = "Repos"
 icon = "fa fa-code-fork fa-2x"
-weight = 1
+weight = 3
 url = "https://git.sr.ht/~vonfry"
 [[params.social]]
 name = "Github"
 icon = "fa fa-github fa-2x"
-weight = 1
+weight = 4
 url = "https://github.com/Vonfry/"
 [[params.social]]
 name = "Gitlab"
 icon = "fa fa-gitlab fa-2x"
-weight = 2
+weight = 4
 url = "https://gitlab.com/Vonfry/"
 [[params.social]]
 name = "Twitter"
 icon = "fa fa-twitter fa-2x"
-weight = 3
+weight = 5
 url = "https://twitter.com/Vonfry314/"
 
 [[menu.main]]
@@ -68,7 +75,3 @@ url = "tags/"
 name = "About"
 weight = 3
 url = "about/"
-[[menu.main]]
-name = "Feed"
-weight = 3
-url = "index.xml"
