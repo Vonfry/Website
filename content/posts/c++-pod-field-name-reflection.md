@@ -30,3 +30,6 @@ series = []
 - glaze 源代码中 `include/glaze/reflection/get_name.hpp`
 - [一篇如果用 aggregate 方式反射成员的博客](https://rodusek.com/posts/2021/03/21/reflecting-over-members-of-an-aggregate/)，[这是archive 链接](https://web.archive.org/web/20240921083124/https://rodusek.com/posts/2021/03/21/reflecting-over-members-of-an-aggregate/)。
 - [一篇使用上述特殊宏完成类型名反射的博客](https://rodusek.com/posts/2021/03/09/getting-an-unmangled-type-name-at-compile-time/)，[这是 archive 链接](https://web.archive.org/web/20240921083240/https://rodusek.com/posts/2021/03/09/getting-an-unmangled-type-name-at-compile-time/)。
+
+## 未来
+现在的标准里有一个实验的 reflection TS，通过 `reflexpr` 与相关的模板函数可以方便的直接拿到成员信息，就不再需要这样绕圈了。
