@@ -23,9 +23,10 @@
 
 想读博……准备发展形式语言、数理逻辑证明等相关方向。
 
-主要使用 `Haskell` 语言，其次使用 `Lisp (Emacs & Common)` 为脚本语言。正在接触 ~~CoQ~~ `Agda`。根据需求可能选用各种语言（`rust`，`CC`，~~`Ruby`~~ 等）进行开发。
+主要使用 `Haskell` 语言，其次使用 `Lisp (Emacs & Common)` 为脚本语言。正在接触 ~~CoQ~~
+`Agda`。根据需求可能选用各种语言（`rust`，`CC`， ~~Ruby~~ 等）进行开发。
 
-平日使用 `Vim` 与 `Emacs` 写代码。`Emacs` 为主力工具。同时使用 `nix`、`home-manager` 作为配置管理工具。开发环境集中于 NixOS。
+平日使用 ~~Vim 与~~ `Emacs` 为主力工具。同时使用 `nix`、`home-manager` 作为配置管理工具。开发环境集中于 NixOS。
 
 关于开发，更多请见 [dotfiles](https://git.sr.ht/~vonfry/dotfiles) 和 [awesome](https://git.sr.ht/~vonfry/awesome)。
 
@@ -40,9 +41,11 @@
 
 [mail@vonfry.name](https://keys.openpgp.org/search?q=mail%40vonfry.name)
 
-[2023-11-26~2024-11-25 mail@vonfry.name](https://keys.openpgp.org/search?q=47C776E389E2BE8D9D8CA4391B81687FBA75D6B5)
+[2024-11-23~2025-11-23 mail@vonfry.name](https://keys.openpgp.org/search?q=296F20CA0C30889E8187C22D1F622882C01D332C)
 
 ### Expired
+
+[2023-11-26~2024-11-25 mail@vonfry.name](https://keys.openpgp.org/search?q=47C776E389E2BE8D9D8CA4391B81687FBA75D6B5)
 
 [2023-08-30~2024-08-30 moooffice@vonfry.name](https://keys.openpgp.org/search?q=E1BF05A1297B6E5D2487CB48F9D4E1576A3F8A60)
 
