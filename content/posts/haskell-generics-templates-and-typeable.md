@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2025-01-06T19:32:20+08:00
 title = "Haskell 里 Generics, Template 与 Typeable 的一些杂思"
 description = ""
