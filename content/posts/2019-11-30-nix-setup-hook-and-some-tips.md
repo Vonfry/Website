@@ -15,7 +15,6 @@ title: nix setupHook和一些tips
 
 这两个问题其实是同样的，因为都是wrapper的内容。这两个问题之外，就是一些小细节了。
 
-<!--more-->
 
 ## cc-wrapper/bintools-wrapper
 

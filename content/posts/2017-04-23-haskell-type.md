@@ -10,7 +10,6 @@ title: Haskell类型限制
 
 # 起因
 起因其实是关于`catch`以及`catchIOError`。对于catch，一开始，博主怎么弄都是错误信息，最后的原因是在于lambda中第一个参数的类型是非确认而引起的。
-<!--more-->
 
 catch和catchIOError的原型：
 ```haskell

@@ -9,7 +9,6 @@ title: haskell caf
 
 haskell中，会对特定的`form`进行缓存。从而产生出了一些使用无穷列表等方案的技巧，用于缓存运行结果。避免重复计算。最典型的例子就是斐波那契数。
 
-<!--more-->
 
 几个参考：[wiki: memoising](https://wiki.haskell.org/Memoization) 
 [Constant Applicative Form(caf)](https://wiki.haskell.org/Constant_applicative_form)

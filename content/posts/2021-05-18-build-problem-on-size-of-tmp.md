@@ -13,7 +13,6 @@ title: 临时文件目录空间导致的编译失败
 ## 起因
 
 使用 nixpkgs 中定义的 tensorflow-gpu 时，编译过程中出现了 `/build ... no space` 类似的错误。
-<!--more-->
 
 ## 原因
 

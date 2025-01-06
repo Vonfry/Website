@@ -13,7 +13,6 @@ title: 'haskell: fix point'
 
 `fix` 函数是基于 Y 子、定点理论等原理进行设计及使用的。
 
-<!--more-->
 
 Ref. [3] 为例，
 

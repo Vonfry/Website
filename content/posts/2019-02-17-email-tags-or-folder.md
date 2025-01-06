@@ -11,7 +11,6 @@ title: 邮件标签与文件夹
 
 现代电子邮件有着很多功能，比如folder、tags等。但是folder是包含在imap协议里的，而tags则。 其中又以gmail最为特殊，完全使用tags，但gmail对tags针对imap进行了folder变换，所以使用上没什么影响。可是对于其它邮箱就不一样了，我们分类应该是用tags还是用folder呢？
 
-<!--more-->
 
 tags和folder都可以通过filter进行自动配置，最大的区别就在于后者可以用imap从各种客户端直接访问，而前者不行。
 

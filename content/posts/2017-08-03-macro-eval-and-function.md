@@ -9,7 +9,6 @@ title: 宏，eval，函数
 ---
 
 本文以lisp为主
-<!--more-->
 
 # 函数(function)
 

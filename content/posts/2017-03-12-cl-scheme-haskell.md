@@ -10,7 +10,6 @@ title: CL与Scheme与Haskell
 ---
 
 最近开始学习Haskell了，同样是函数式语言，当然少不了对比。因为Haskell还没有完全学完，所以表达可能有点不太完善，不过现在已经完全想走向haskell了。
-<!--more-->
 
 这里博主打个不太好的比方，
 

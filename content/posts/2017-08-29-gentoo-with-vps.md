@@ -10,7 +10,6 @@ title: 在vps中安装gentoo
 ---
 
 基本过程和平时安装一样的。参考[Handbook](https://wiki.gentoo.org/wiki/Handbook)就好了。需要注意的有几点。
-<!--more-->
 
 ## 分区
 

@@ -8,7 +8,6 @@ tags:
 title: 记一次作业程序
 ---
 
-<!--more-->
 # 题目
 
 > Description

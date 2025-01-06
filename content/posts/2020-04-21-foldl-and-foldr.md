@@ -10,7 +10,6 @@ title: foldl,foldr,foldl'
 
 fold是合并列表等重要的操作，其中主要有foldr和foldl，也即从右向左和从左向右。一般来说，后者会优于前者。但在haskell中，并不是这样。
 
-<!--more-->
 
 ## 基本结论
 

@@ -10,7 +10,6 @@ title: nix derivation
 今天在想要不要把home-manager内的zsh plugins换成impurer的fetch时想到的问题。nix derivation是怎么计算hash的，为什么使用`fetchFromGethub`这类由stdenv定义的fetchur就没有问题，而原装的就不行呢？
 
 简单来说就是看源代码。
-<!--more-->
 
 ## nixpkgs的fetcher
 

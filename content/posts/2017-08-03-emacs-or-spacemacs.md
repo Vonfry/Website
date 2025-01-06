@@ -10,7 +10,6 @@ tags:
 title: emacs自配置或使用spacemacs
 ---
 
-<!--more-->
 # 为什么使用emacs或vim
 
 1. 高定制性

@@ -10,5 +10,4 @@ title: REFS code is engineering, types are science
 ---
 
 [Origin](https://web.archive.org/web/20200406065005/https://www.tweag.io/posts/2020-03-05-peirce.html)
-<!--more-->
 

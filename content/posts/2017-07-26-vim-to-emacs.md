@@ -9,7 +9,6 @@ title: 从vim转至emacs的理由
 ---
 
 笔者以前是使用vim写代码，因为vim和emacs一直处于被讨论的情况，所以很自然就去了解了一下，最开始是`spacemacs`，然后弃了（不管怎么说，这不过是在用别人的配置。没有意义，这样不如直接用atom什么的）。后来去学习了一下emacs操作。了解了evil。以及elisp（如果学过scheme或者common lisp的话，elisp可以直接上手，基本上没有太大差别。就是文档习惯有点不太一样）。
-<!--more-->
 
 # 为什么从vim转至emacs
 

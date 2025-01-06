@@ -26,4 +26,3 @@ title: haskell中fmap, liftM, mapM, traverse历史问题记录
 
 简单来说就是历史问题，以前的Monad等并没有受Functor约束，在2010的Haskell中已经改正了，但因为历史因素没有删除这些多余的命名。在使用中，推荐使用约束最少的那一个，比如说fmap和liftM，使用fmap。虽然实现上会有点区别，但最后的结果应该是一致的。
 
-<!--more-->

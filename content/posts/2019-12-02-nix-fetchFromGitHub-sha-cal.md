@@ -8,7 +8,6 @@ title: nix计算目录sha值访方法
 ---
 
 nixpkgs有一个fetchFromGitHub的方法，里面需要计算sha值，但是但是是但是文档里没有说这个值是怎么算出来的，不同于一般的文件是很容易计算的，这里是一个目录啊，文档上还写着”extracted directory“。很是迷惑。
-<!--more-->
 
 解决思路，读源码。
 

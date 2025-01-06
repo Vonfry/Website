@@ -6,7 +6,6 @@ tags:
 - git
 title: git文件大小写问题
 ---
-<!--more-->
 
 # 说明
 

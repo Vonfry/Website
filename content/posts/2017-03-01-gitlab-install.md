@@ -10,7 +10,6 @@ title: gitlab安装问题记录
 ---
 
 最近开始重新整理服务器，安装gitlab时，出现了不少问题在这里记录一下。
-<!--more-->
 
 # useradd
 官方上面，用户的useradd有一个`--disable-login`的参数，这个是只有debine包内才有有的参数，目的是禁用登陆，而在fedora中，或者更普遍些我们可以使用`-L`来锁定，注意不可能将shell设置为`nologin`，但则gitlab就无法使用了，因为其中有部分关联到gitlab-shell操作。

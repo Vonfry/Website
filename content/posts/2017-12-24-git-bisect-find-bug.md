@@ -7,7 +7,6 @@ tags:
 - bug
 title: 使用git查找bug
 ---
-<!--more-->
 
 # 使用
 git有一个指令为`bisect`，可以使用这个进行commit标记，来进行bug追踪查找对应的提交，从而发现bug位置，当然……前提是你的commit是严格按照一个commit为一个atom这样的概念进行的。

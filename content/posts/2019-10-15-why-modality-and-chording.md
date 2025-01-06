@@ -9,4 +9,3 @@ title: Why modality and chording
 ---
 
 From: [noctuid/dotfiles](https://github.com/noctuid/dotfiles/blob/master/emacs/editing.org)
-<!--more-->

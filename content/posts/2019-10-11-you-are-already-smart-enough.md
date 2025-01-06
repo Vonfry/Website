@@ -9,7 +9,6 @@ title: 转：你是否有编写haskell的能力
 
 原文：[you-are-already-smart-enough](https://www.williamyaoh.com/posts/2019-10-05-you-are-already-smart-enough.html)
 
-<!--more-->
 
 - category theory
 - lambda calculus

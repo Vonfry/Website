@@ -7,7 +7,6 @@ tags:
 title: lambd演算
 ---
 
-<!--more-->
 ## 目的
 
 主要是做个收藏
