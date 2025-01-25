@@ -39,9 +39,11 @@
 
 ### Current
 
-[mail@vonfry.name](https://keys.openpgp.org/search?q=mail%40vonfry.name)
+[_@vonfry.name](https://keys.openpgp.org/search?q=D0274762932BBEABE4B51728A7190E30D34FE8D7)
+[2025-01-25~2026-01-25 _@vonfry.name](https://keys.openpgp.org/search?q=D0274762932BBEABE4B51728A7190E30D34FE8D7)
 
-[2024-11-23~2025-11-23 mail@vonfry.name](https://keys.openpgp.org/search?q=296F20CA0C30889E8187C22D1F622882C01D332C)
+[dev@vonfry.name](https://keys.openpgp.org/search?q=2E9A5D037F4F9AB953DE13117E75AF3FCFB8E2F9)
+[2025-01-25~2026-01-25 dev@vonfry.name](https://keys.openpgp.org/search?q=2E9A5D037F4F9AB953DE13117E75AF3FCFB8E2F9)
 
 ### Expired
 
@@ -58,3 +60,7 @@
 [2019-09-09~2020-03-07 mail@vonfry.name](https://keys.openpgp.org/search?q=80763355C0BF6934)
 
 [2018-03-31~2019-03-31 vonfry314@gmail.com](https://keys.openpgp.org/search?q=7FC96CE000223B1C)
+
+### Revoked
+
+**~2025-01-25** mail@vonfry.name `296F20CA0C30889E8187C22D1F622882C01D332C`
