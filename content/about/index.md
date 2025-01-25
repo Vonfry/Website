@@ -39,11 +39,11 @@
 
 ### Current
 
-[_@vonfry.name](https://keys.openpgp.org/search?q=D0274762932BBEABE4B51728A7190E30D34FE8D7)
-[2025-01-25~2026-01-25 _@vonfry.name](https://keys.openpgp.org/search?q=D0274762932BBEABE4B51728A7190E30D34FE8D7)
+[_@vonfry.name](https://keys.openpgp.org/search?q=_@vonfry.name)
+[2025-01-25~2026-01-25 _@vonfry.name](https://keys.openpgp.org/verify/8CShHGt7zEh9xYx2vV6ClkblEicdCOh340pXRk2vnm2)
 
-[dev@vonfry.name](https://keys.openpgp.org/search?q=2E9A5D037F4F9AB953DE13117E75AF3FCFB8E2F9)
-[2025-01-25~2026-01-25 dev@vonfry.name](https://keys.openpgp.org/search?q=2E9A5D037F4F9AB953DE13117E75AF3FCFB8E2F9)
+[dev@vonfry.name](https://keys.openpgp.org/search?q=dev@vonfry.name)
+[2025-01-25~2026-01-25 dev@vonfry.name](https://keys.openpgp.org/search?q=0DB765391DA85409A89DA2B03DA5AB76AF957A27)
 
 ### Expired
 
