@@ -32,7 +32,7 @@
 
 ## Contact / 联系
 
-- [mail@vonfry.name](mailto:mail@vonfry.name), or you can replace mail with any validated local-part.
+- [_@vonfry.name](mailto:_@vonfry.name), or you can replace mail with any validated local-part.
 - [matrix: @vonfry:vonfry.name](https://matrix.to/#/@vonfry:vonfry.name).
 
 ## PGP Keys
