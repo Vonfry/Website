@@ -7,8 +7,17 @@ defaultcontentlanguage = "en"
 
 pagination.pagerSize = 20
 
+enableGitInfo = true
+enableRobotsTXT = true
+
 [markup.highlight]
 sytle = "dracula"
+
+[markup.goldmark.extensions.cjk]
+eastAsianLineBreaks = false
+eastAsianLineBreaksStyle = 'simple'
+enable = false
+escapedSpace = false
 
 [taxonomies]
 category = "categories"
@@ -28,8 +37,11 @@ favicon32 = "/images/default/logo-white.png"
 favicon16 = "/images/default/logo-white.png"
 
 enableTwemoji = true
-hidecolorschemetoggle = true
+hidecolorschemetoggle = false
 colorScheme = "dark"
+
+rtl = false
+commit = "https://git.sr.ht/~vonfry/website/tree"
 
 [[params.social]]
 name = "Feed"
