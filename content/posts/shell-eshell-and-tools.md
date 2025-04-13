@@ -1,6 +1,6 @@
 +++
 title = "shell、eshell与工具"
-date = 2025-04-13T15:17:00+0800
+date = 2025-04-13T15:17:00+08:00
 draft = false
 tags = ["shell"]
 categories = ["os", "tool"]
